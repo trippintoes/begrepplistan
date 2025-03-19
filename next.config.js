@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',  // Ställer in att bygga till statiska filer
-  distDir: 'out',    // Specificerar out-mappen som utdatamapp
-  // Om du ska publicera på GitHub Pages på en URL som inte är rot (t.ex. username.github.io/begrepplistan)
-  basePath: '/begrepplistan',
+  output: 'export',  // Exportera statiska filer
+  trailingSlash: true, // Använd trailingSlash för bättre relativa länkar
   images: {
-    unoptimized: true, // Behövs för export till statiska sidor
-  }
+    unoptimized: true, // Krävs för statisk export
+  },
+  // Ta bort basePath och distDir för enklare konfiguration
 };
 
 module.exports = nextConfig; 
