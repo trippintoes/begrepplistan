@@ -8,7 +8,8 @@ node_modules/
 
 # Next.js
 /.next/
-/out/
+# Vi kommenterar bort denna rad så att out-mappen kan versionshanteras för GitHub Pages
+# /out/
 
 # Production
 /build
