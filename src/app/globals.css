@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Gör scrollningen smidigare */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Dölj scrollbar för Chrome, Safari och Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dölj scrollbar för IE, Edge och Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE och Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
