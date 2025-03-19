@@ -2,11 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',  // Exportera statiska filer
-  trailingSlash: true, // Använd trailingSlash för bättre relativa länkar
   images: {
     unoptimized: true, // Krävs för statisk export
   },
-  // Ta bort basePath och distDir för enklare konfiguration
+  trailingSlash: true, // Lägger till en slash i slutet av URL:er för bättre relativa länkar
 };
 
 module.exports = nextConfig; 
