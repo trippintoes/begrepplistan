@@ -197,10 +197,12 @@ try {
   console.log(`Extraherade totalt ${concepts.length} begrepp`);
   console.log(`Högsta ID: ${Math.max(...concepts.map(c => parseInt(c.id)))}`);
   
-  // Skriv till JSON-fil
-  fs.writeFileSync('concepts.json', JSON.stringify(concepts, null, 2));
+  // Skriv till JSON-fil med korrekt encoding
+  // UTF-8 med BOM för att säkerställa korrekt teckenkodning för svenska tecken
+  const jsonString = JSON.stringify(concepts, null, 2);
+  fs.writeFileSync('concepts.json', '\ufeff' + jsonString, 'utf8');
   
-  console.log(`Skrev ${concepts.length} begrepp till concepts.json`);
+  console.log(`Skrev ${concepts.length} begrepp till concepts.json med UTF-8 encoding`);
   
   // Kontrollera saknade ID:n
   const foundIds = concepts.map(c => parseInt(c.id));
