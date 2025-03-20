@@ -1,0 +1,2165 @@
+[
+  {
+    "id": "1",
+    "term": "Active Directory ",
+    "shortname": "Förkortning: AD",
+    "description": "Katalogtjänst från Microsoft som på VA SYD används bland annat till att autentisera anställda och konsulter. ",
+    "source": "VA SYD IT - Informationssäkerhetskrav vid nya och förändrade digitala lösningar, ver 2 2020-12-15"
+  },
+  {
+    "id": "2",
+    "term": "Aktivitet-Tid-Resurs",
+    "shortname": "Förkortning: ATR",
+    "description": "Aktivitet-Tid-Resurs. Ett dokument som upprättas av konsult och godkänns av beställare före ett specifikt arbete igångsättning inom ett kontrakt med en konsult. Beskriver planerade arbetsinsatser vad avser underlag, arbetets omfattning och avgränsningar, resultat, kvalitetsledning, miljöledning, tidsåtgång,resurser och budget. ",
+    "source": "-"
+  },
+  {
+    "id": "3",
+    "term": "Allmänna bestämmelser VA",
+    "shortname": "Förkortning: ABVA",
+    "description": "ABVA reglerar VA-huvudmannens och VA-abonnentens (fastighetsägare) rättigheter och skyldigheter gentemot varandra.",
+    "source": "Affärsplan 2019 2030 https://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
+  },
+  {
+    "id": "4",
+    "term": "Anläggningsbeteckning",
+    "shortname": "Förkortning: -",
+    "description": "Kod som beskriver vilken anläggning",
+    "source": "-"
+  },
+  {
+    "id": "5",
+    "term": "Arbetsmiljöspecialist",
+    "shortname": "Förkortning: -",
+    "description": "Bevakar arbetsmiljö i projektet. Kan vara person från programmet",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "6",
+    "term": "Arkiv",
+    "shortname": "Förkortning: -",
+    "description": "Samling av handlingar",
+    "source": "-"
+  },
+  {
+    "id": "7",
+    "term": "Avloppsslam från fartyg/hamnar",
+    "shortname": "Förkortning: -",
+    "description": "Avloppsvatten från fartyg/hamnar benämns som avloppsslam (eftersom vattnet ej ska ingå i IED-beräkning)",
+    "source": "45385"
+  },
+  {
+    "id": "8",
+    "term": "Avloppstunnel norr",
+    "shortname": "Förkortning: -",
+    "description": "En avloppstunnel som ansluter kommunerna Burlöv, Lomma och Lund samt orten Hjärup till avloppsreningssystemet MAXIMA. I dagsläget sträcker sig den planerade avloppstunneln mellan Källby avloppsreningsverk och Sjölunda avloppsreningsverk, en sträcka på cirka 10 kilometer. Till avloppstunneln ansluter kommunerna Burlöv och Lomma samt orten Hjärup i Staffanstorps kommun via befintliga och nya ledningssystem.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "9",
+    "term": "Avloppstunnel söder",
+    "shortname": "Förkortning: -",
+    "description": "Avloppstunnel under Malmö från Turbinen i centrala Malmö till Sjölunda avloppsreningsverk består av en cirka 5,5 kilometer lång huvudtunnel och två anslutande mikrotunnlar, totalt cirka 2,4 kilometer långa. I programmet ska vi i all kommande kommunikation/kommunikationsmaterial avveckla begreppet Malmö avloppstunnel/MAT. Syftar på projekt Tunnel och delen från Malmö till Nya Sjölunda. Ett begrepp som lever kvar och används av omvärlden, media framför allt.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "10",
+    "term": "Basplan",
+    "shortname": "Förkortning: -",
+    "description": "Beslutad omfattning, tid och budget. Från engelskans baseline.",
+    "source": "-"
+  },
+  {
+    "id": "11",
+    "term": "Basplan för kostnader",
+    "shortname": "Förkortning: -",
+    "description": "Den godkända versionen av den periodiserande programbudgeten, exklusive alla reserver för oförutsedda händelser, som endast kan ändras genom formella rutiner för ändringsstyrning. Planen används som utgångspunkt för jämförelser mot faktiska resultat.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "12",
+    "term": "Basplan för omfattning",
+    "shortname": "Förkortning: -",
+    "description": "Den godkända versionen av tidplanen, som endast kan ändras genom formella rutiner för ändringsstyrning och ändras som grund för jämförelser.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "13",
+    "term": "Basplan för tider",
+    "shortname": "Förkortning: -",
+    "description": "Den godkända versionen av programspecifikationen, programmets WBS och tillhörande beskrivning. Basplanen kan endast ändras genom formella rutiner för ändringsstyrning och användas som grund för jämförelser.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "14",
+    "term": "BAS-P-samordnare",
+    "shortname": "Förkortning: -",
+    "description": "Byggarbetsmiljösamordnaren för planering och projektering (Bas-P) ska samordna de olika projektörerna, det vill säga arkitekter, konstruktörer och andra som medverkar vid planeringen och projekteringen.",
+    "source": "Rollista HAR-programmet 2021-03-29 Arbetsmiljöverket"
+  },
+  {
+    "id": "15",
+    "term": "BAS-U-samordnare",
+    "shortname": "Förkortning: -",
+    "description": "Byggarbetsmiljösamordnaren för utförandet av arbetet (Bas-U) ska delta i planeringen och samordna olika entreprenörers arbeten i byggskedet så att en entreprenör inte skapar risker för de andra. ",
+    "source": "Rollista HAR-programmet 2021-03-29 Arbetsmiljöverket"
+  },
+  {
+    "id": "16",
+    "term": "Behandla avfall",
+    "shortname": "Förkortning: -",
+    "description": "Med att \"behandla avfall\" avses att återvinna eller bortskaffa avfall. ",
+    "source": "15 kap. 6 § miljöbalken."
+  },
+  {
+    "id": "17",
+    "term": "Beslut",
+    "shortname": "Förkortning: BESL",
+    "description": "VA SYDs term för slutkostnadsbudget i ett projekt",
+    "source": "-"
+  },
+  {
+    "id": "18",
+    "term": "Best Available Technology",
+    "shortname": "Förkortning: BAT",
+    "description": "BAT-principen (Best Available Technique) innebär att alla nyinvesteringar som görs med denna teknik, görs med bästa möjliga teknik, ur miljösynpunkt.",
+    "source": "https://sv.wikipedia.org/wiki/BAT-principen"
+  },
+  {
+    "id": "19",
+    "term": "Betalningscertifikat",
+    "shortname": "Förkortning: -",
+    "description": "Engelskbenämning: Interim Payment Certificate",
+    "source": "-"
+  },
+  {
+    "id": "20",
+    "term": "Biogas ",
+    "shortname": "Förkortning: -",
+    "description": "Den gas som produceras vid rötning av slam",
+    "source": "44617"
+  },
+  {
+    "id": "21",
+    "term": "Bitr. Informationssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Informationshantering inom funktion Information",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "22",
+    "term": "Brandsamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Medverkar för att koordinera arbete kopplat till brand inom verksamheter och organisationer",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "23",
+    "term": "bräckt vatten",
+    "shortname": "Förkortning: -",
+    "description": "brackvatten havsvatten med en salinitet, salthalt (jämför hav, Havens kemi: Bestämning av salthalten), som ligger mellan oceanens ca 35 ‰ och sötvattens ca 0,3 ‰; i praktiken sätter man ofta intervallet till 0,5–30 ‰.",
+    "source": "-"
+  },
+  {
+    "id": "26",
+    "term": "Budget",
+    "shortname": "Förkortning: -",
+    "description": "Fastställd kostnadsram. Aktuell budget = ursprunglig budget + omföring  + kostnadsökning + kostnadsminskning (samt vid periodiserad budget; + tidigareläggning + senareläggning) ",
+    "source": "-"
+  },
+  {
+    "id": "27",
+    "term": "Budskap",
+    "shortname": "Förkortning: -",
+    "description": "Vad programmet vill säga till sina intressenter. Se även begrepp Huvudbudskap!",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "28",
+    "term": "Bästa tillgängliga teknik",
+    "shortname": "Förkortning: BTT",
+    "description": "BAT-principen (Bästa Tillgängliga Teknik) innebär att alla nyinvesteringar som görs med denna teknik, görs med bästa möjliga teknik, ur miljösynpunkt.",
+    "source": "https://sv.wikipedia.org/wiki/BAT-principen"
+  },
+  {
+    "id": "29",
+    "term": "Change Advisory Board",
+    "shortname": "Förkortning: CAB",
+    "description": "Engelskbenämning för \"IT styrgrupp\"",
+    "source": "-"
+  },
+  {
+    "id": "30",
+    "term": "Change Control Board",
+    "shortname": "Förkortning: CCB",
+    "description": "Forum för granskning och förslag till beslut av ändringsbegäran.",
+    "source": "Rutin ändringshantering"
+  },
+  {
+    "id": "31",
+    "term": "Checklista",
+    "shortname": "Förkortning: -",
+    "description": "En checklista är ett verktyg som ofta används för att minimera fel och misstag genom att kompensera för människans begränsade minne och uppmärksamhet. Det medger konsekvens och fulländning när vissa arbeten ska utföras. Ett enkelt exempel är \"att göra\"-listan.",
+    "source": "https://sv.wikipedia.org/wiki/Checklista"
+  },
+  {
+    "id": "33",
+    "term": "Cost Breakdown Structure",
+    "shortname": "Förkortning: CBS",
+    "description": "Cost Breakdown Structure. Logisk nedbrytning av budget med koppling till WBS.",
+    "source": "PMBOK"
+  },
+  {
+    "id": "34",
+    "term": "C-verksamheter",
+    "shortname": "Förkortning: -",
+    "description": "Anmälningspliktiga verksamheter benämns C-verksamheter och dessa ska anmälas till Tillsynsmyndigheten kommunen.",
+    "source": "Se 1 kap. 10 § miljöprövningsförordningen"
+  },
+  {
+    "id": "36",
+    "term": "Databärare",
+    "shortname": "Förkortning: -",
+    "description": "Fysiskt underlag för handlingar/uppgifter.",
+    "source": "-"
+  },
+  {
+    "id": "37",
+    "term": "Datarepresentation",
+    "shortname": "Förkortning: -",
+    "description": "Kodad representation för text, bild, ljud mm.",
+    "source": "-"
+  },
+  {
+    "id": "38",
+    "term": "Dataskyddsombud",
+    "shortname": "Förkortning: DSO",
+    "description": "VA SYDs dataskyddsombud",
+    "source": "VA SYDs intranät"
+  },
+  {
+    "id": "39",
+    "term": "Datastruktur",
+    "shortname": "Förkortning: -",
+    "description": "Logiskt arrangemang av sammanhörande data. Jfr. datamodell, filstruktur. Exempel på datastrukturer är poster, tabeller, trädstruktur.",
+    "source": "GIS-Ordboken?"
+  },
+  {
+    "id": "40",
+    "term": "Defekt",
+    "shortname": "Förkortning: -",
+    "description": "Icke-uppfyllande av krav eller rimliga förväntningar med tanke på avsedd användning, inklusive sådana som rör säkerhet. Anm. 1. Förväntningarna måste vara rimliga under rådande omständigheter. 2. svensk anmärkning. Termen fel används ofta i samma betydelse.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "41",
+    "term": "Delgenomförandeplan",
+    "shortname": "Förkortning: DGFP",
+    "description": "Detaljerad plan för en genomförandeplans delprocess. Tas fram för delprocess som kräver detaljerad styrning. Utgör del av ledningssystemet. Baseras på krav i programplan och programledningsplaner samt ev unika krav från funktionerna.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "42",
+    "term": "Delprojektledare",
+    "shortname": "Förkortning: -",
+    "description": "Ansvarar för ett visst delprojekt",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "45",
+    "term": "Driftstart",
+    "shortname": "Förkortning: -",
+    "description": "Tidpunkt för start av drift av delsystem.",
+    "source": "-"
+  },
+  {
+    "id": "46",
+    "term": "Dynamiska inköpssystem",
+    "shortname": "Förkortning: -",
+    "description": "En form av \"elektroniska ramavtal\" som är öppna för nya leverantörer under sin giltighetstid (8 kap. 1 § LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "47",
+    "term": "Egreement Administratör ",
+    "shortname": "Förkortning: -",
+    "description": "Administrerar signering av publiceringsbara PDF-versioner via VA SYDs e-signeringstjänst.",
+    "source": "Rutin Digital Signering, HAR"
+  },
+  {
+    "id": "48",
+    "term": "Ekonomiassistent",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Kostnadsstyrning inom funktion Planering",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "49",
+    "term": "Erfarenhetsdrift",
+    "shortname": "Förkortning: -",
+    "description": "Provning av hela systemet i kommersiell drift i syfte att validera vissa krav.",
+    "source": "-"
+  },
+  {
+    "id": "50",
+    "term": "Erforderlig avsänkning",
+    "shortname": "Förkortning: -",
+    "description": "Skillnad mellan högsta naturliga grundvattennivå och dimensionerande grundvattennivå. ",
+    "source": "-"
+  },
+  {
+    "id": "51",
+    "term": "Extern kommunikation",
+    "shortname": "Förkortning: -",
+    "description": "Kommunikation mellan programmedlemmar och intressenter utanför VA SYD. ",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "52",
+    "term": "Externa processen",
+    "shortname": "Förkortning: -",
+    "description": "En av programmets fyra huvudprocesser. Den process som hanterar programmets yttre förutsättningar och omfattar handlingar och underlag för de avtal och tillstånd som krävs för att genomföra programmet. I den externa processen följs också efterlevnaden av ingångna avtal och överenskommelser samt erhållna tillstånd upp. ",
+    "source": "Programplanen"
+  },
+  {
+    "id": "53",
+    "term": "Fastighetssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Styrning av fastighetsfrågor inom funktion Fastighet",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "54",
+    "term": "Funktionsklass",
+    "shortname": "Förkortning: -",
+    "description": "Klassificiering av funktion",
+    "source": "-"
+  },
+  {
+    "id": "55",
+    "term": "Funktionskontroll",
+    "shortname": "Förkortning: -",
+    "description": "Kontroll av vara med avseende på dess funktion.",
+    "source": "SS 020101"
+  },
+  {
+    "id": "56",
+    "term": "Funktionskrav",
+    "shortname": "Förkortning: -",
+    "description": "Verifierbart krav på egenskap hos byggnad eller produkt vid bestämd användning.",
+    "source": "TNC95"
+  },
+  {
+    "id": "57",
+    "term": "Funktionsprov",
+    "shortname": "Förkortning: -",
+    "description": "Kontroll att installationssystemen fungerar tillsammans i drift.",
+    "source": "Allmänt råd i Boverkets byggregler BBR"
+  },
+  {
+    "id": "58",
+    "term": "Förfrågningsunderlag",
+    "shortname": "Förkortning: -",
+    "description": "Använd inte termen. Gammal term för Upphandlingsdokument och Anbudsinfordran.",
+    "source": "LOU 2017"
+  },
+  {
+    "id": "59",
+    "term": "Förfrågningsunderlag",
+    "shortname": "Förkortning: -",
+    "description": "Det underlag som beställaren tillhandahåller för utabetande av anbud. Jämför upphandlingsdokument.",
+    "source": "AB 04 se ny lagstiftning"
+  },
+  {
+    "id": "60",
+    "term": "Gallra",
+    "shortname": "Förkortning: -",
+    "description": "Förstöra allmänna handlingar eller uppgifter i allmänna handlingar",
+    "source": "-"
+  },
+  {
+    "id": "61",
+    "term": "Gallringsbeslut",
+    "shortname": "Förkortning: -",
+    "description": "Formellt fastställande av att handlingar/uppgifter skall/får förstöras.",
+    "source": "-"
+  },
+  {
+    "id": "62",
+    "term": "Genomförandeavtal",
+    "shortname": "Förkortning: -",
+    "description": "Ett avtal som beskriver ett överenskommet genomförande och reglering av detta mellan parter. Upprättas före påbörjan av genomförandet.",
+    "source": "-"
+  },
+  {
+    "id": "63",
+    "term": "Genomförandeplaner",
+    "shortname": "Förkortning: GFP",
+    "description": "Dokument som beskriver genomförandet av ett projekt. Baseras på krav i programplan och programledningsplaner samt ev unika krav från funktionerna.Utgör del i programmets ledningssystem.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "64",
+    "term": "Grafisk profil",
+    "shortname": "Förkortning: -",
+    "description": "En del av programmets kommunikationsstrategi som styr hur vi kommunicerar grafiskt med form, färg, bild, text och  med budskap  - för att uppfattas på ett sätt som stämmer med vår kommunikationsstrategi. ",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "65",
+    "term": "Gränssnittsbeskrivning",
+    "shortname": "Förkortning: GSB",
+    "description": "Ett dokument som beskriver ett gränssnitt mellan två parter, internt eller externt.",
+    "source": "-"
+  },
+  {
+    "id": "66",
+    "term": "Gränssnittsöverenskommelse",
+    "shortname": "Förkortning: -",
+    "description": "Ett dokument som beskriver och reglerar ansvar i ett upprättat gränssnitt mellan två parter, internt eller externt. Dokumentet godkänns/signeras vid överenkommelsens upprättande och vid överlämnande/stängning av aktivitet.",
+    "source": "-"
+  },
+  {
+    "id": "67",
+    "term": "Gränsvärde",
+    "shortname": "Förkortning: -",
+    "description": "Ett värde som, om det överskrids, kan föranleda att straff och/eller miljö­skyddsavgift utdöms. Gränsvärden för utsläpp av föroreningar kan föreskri­vas som villkor vid miljöprövning av verksamheter.  (se även riktvärde).",
+    "source": "-"
+  },
+  {
+    "id": "68",
+    "term": "Hantering av risk",
+    "shortname": "Förkortning: -",
+    "description": "En gradering av risk bestämd utifrån en för programmet definierad riskmatris som är baserad på kombinationer av sannolikhet och konsekvens. Risknivån används för att prioritera hantering av risk.",
+    "source": "-"
+  },
+  {
+    "id": "69",
+    "term": "HAR",
+    "shortname": "Förkortning: -",
+    "description": "HAR är en förkortning av hållbar avloppsrening. HAR kan användas internt när mottagaren vet vad förkortningen står för, till exempel i mejl och dokumentnamn. Se även Hållbar avloppsrening.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "70",
+    "term": "Huvudbudskap",
+    "shortname": "Förkortning: -",
+    "description": "Programmets huvudbudskap speglas av /härstammar ifrån programmets Frågor & svar (masterdokument i verksamhetssystemet under Kommunikation). Det är våra viktigaste budskap till våra intressenter, ofta på övergripande nivå (internt/externt). Se även Budskap.",
+    "source": "-"
+  },
+  {
+    "id": "71",
+    "term": "Huvudmilstolpe",
+    "shortname": "Förkortning: -",
+    "description": "En milstolpe på programnivå som används i kommunikation mot styrgrupp och högre intressenter. Huvudmilstolpar ska kopplas mot projektmilstolpar och underliggande planering. Dvs dessa huvudmilstolpar förutsätter att planering är utförd till erforderlig nivå i programmet.",
+    "source": "-"
+  },
+  {
+    "id": "72",
+    "term": "Hållbar avloppsrening ",
+    "shortname": "Förkortning: HAR",
+    "description": "Hållbar avloppsrening är namnet på VA SYDs avdelning där programorganisationen har sin hemvist. Det används internt. HAR är en internt godkänd förkortning.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "73",
+    "term": "Händelse",
+    "shortname": "Förkortning: -",
+    "description": "En uppsättning inträffade omständigheter.",
+    "source": "-"
+  },
+  {
+    "id": "74",
+    "term": "Indata",
+    "shortname": "Förkortning: -",
+    "description": "Indata (stimuli) (även invärde, instorhet, engelska: input) är data (otolkad information, variabler) som matas in i ett system, ofta för någon typ av databehandling som producerar utdata.",
+    "source": "-"
+  },
+  {
+    "id": "75",
+    "term": "Individ, tekniks anläggningsinformation",
+    "shortname": "Förkortning: -",
+    "description": "Specifikt exemplar av en objekttyp som är unikt identifierad oavsett var och när den förekommer. Vanligtvis gäller detta en individ av en produkt som under en viss period utgör ett objekt i en process.",
+    "source": "ISO/IEC 81346"
+  },
+  {
+    "id": "76",
+    "term": "Informationsansvarig",
+    "shortname": "Förkortning: -",
+    "description": "En individ vid Leverantören som har ansvar för att säkerställa kvaliteten och uppfylla Beställarens krav på informationsleverans.",
+    "source": "Se Bilaga 1, kap. 2.10: Projektorganisation"
+  },
+  {
+    "id": "77",
+    "term": "Informationshanteringsplan",
+    "shortname": "Förkortning: IHP",
+    "description": "IHP är ett styrande dokument som krävs enligt tvingande arkivlagstiftning och som har beslutats av förbundsstyrelsen. Dokumentet ska hjälpa oss att hålla ordning och reda. IHP är uppdelad i 3 nivåer: Styrande (1) stödjande (2) och kärnverksamhet (3). Alla ska följa 1 styrande och 2 stödjande verksamhet samt ta del av relaterade processer i kärnverksamhet. IHP anger. bl.a. Lagringsyta, ägare, rensningsdatum etc.",
+    "source": "https://intranet.vaverket.local/#/start/stod-service/diaret/arkivdokumentation"
+  },
+  {
+    "id": "78",
+    "term": "Informationssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Informationshantering inom funktion Information",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "79",
+    "term": "Informationssamordning",
+    "shortname": "Förkortning: IM",
+    "description": "Medverkar för att koordinera informationsarbete inom verksamheter och organisationer",
+    "source": "-"
+  },
+  {
+    "id": "80",
+    "term": "Informationssäkerhetssamordnare",
+    "shortname": "Förkortning: ISS",
+    "description": "Tillhör IT-enheten och fokusera på att effektivisera, utveckla och säkra upp information och infosäkerhetsarbetet. Huvuduppgift är att ansvara för efterlevnad av vår ISO standard ISO27001 samt att stödja systemförvaltare i verksamheten gällande förvaltning och utveckling av IT-systemlösningar",
+    "source": "https://intranet.vaverket.local/#/nyheter/sidor/it-enheten-forstarker-med-ett-informationsteam_.aspx"
+  },
+  {
+    "id": "81",
+    "term": "Informationssystemet ",
+    "shortname": "Förkortning: -",
+    "description": "I vid bemärkelse innefattar informationssystem inte bara ett datorsystems program- och maskinvara, kommunikationsteknologi och informationsinnehåll, utan även dess användare och deras organisationsprocesser. Informationssystem delas traditionellt in i system för administrativ databehandling (ADB), idag ofta kallat affärssystem, som främst understödjer affärsprocesser där människor är aktörer, och teknisk databehandling (TDB), som främst understödjer maskiner och andra informationssystem.",
+    "source": "-"
+  },
+  {
+    "id": "82",
+    "term": "Initiera-Planera-Utföra-Styra-Avsluta",
+    "shortname": "Förkortning: IPUSA",
+    "description": "Initiera-Planera-Utföra-Styra-Avsluta. Stegen utförs för alla aktiviteter i programmet.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "83",
+    "term": "Innovationspartnerskap",
+    "shortname": "Förkortning: -",
+    "description": "Typ av förfarande som upphandlande myndigheter får använda när de har behov av lösningar som inte finns på marknaden (6 kap. 1 § LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "84",
+    "term": "Innovationsupphandling",
+    "shortname": "Förkortning: -",
+    "description": "Att i upphandlingsprocessen främja innovation genom att efterfråga eller tillåta nya lösningar",
+    "source": "Upphandlingsmyndigheten"
+  },
+  {
+    "id": "85",
+    "term": "Intern kommunikation",
+    "shortname": "Förkortning: -",
+    "description": "Kommunikation mellan programmedlemmar men även med VA SYDs linjeorganisation.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "86",
+    "term": "Intressentanalys ",
+    "shortname": "Förkortning: -",
+    "description": "Klassificering och prioritering av intressenternas påverkan och intresse. Fungerar som underlag till handlingsplaner.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "87",
+    "term": "Intressenthantering",
+    "shortname": "Förkortning: INTR",
+    "description": "Handlingsplan för att hantera intressenters behov, förväntningar och krav på programmet.",
+    "source": "-"
+  },
+  {
+    "id": "88",
+    "term": "IT styrgrupp",
+    "shortname": "Förkortning: ITS",
+    "description": "ITS består i dagsläget av enhetschef IT samt avdelningschef HR, IT och Juridik. Avstämningsmöten hålls varannan vecka där frågor läggs fram av enhetschef till avdelningschef för beredning och eventuellt beslut. Om IT Styrgrupp anser att fråga bör beredas av en annan del av organisation eller ledningsgrupp så bjuds berörd part in till samtal eller så delges ärende till beredande ledningsgrupp att ta ställning till. På dagordning finns ärende som:• Uppföljning av ärenden från förra mötet • Verksamhetskritiska förändringar genomfört sen senaste mötet • Genomgång av IT förändringsförslag (RFC – Request for Change) • Genomgång av IT verksamhetsplan (VP samt matrix)",
+    "source": "IT-Strategi VA SYD 2017-2019"
+  },
+  {
+    "id": "89",
+    "term": "IT-samordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Informationshantering inom funktion Information",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "90",
+    "term": "Jurist",
+    "shortname": "Förkortning: -",
+    "description": "Tillför projektet kompetens inom juridik",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "91",
+    "term": "Kalkyl/kalkylering",
+    "shortname": "Förkortning: -",
+    "description": "Där programmet når sina intressenter.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "92",
+    "term": "Klasskod",
+    "shortname": "Förkortning: -",
+    "description": "Är en bokstavskod som anger klassen inom en viss objekttyp eller just objekttypen. Klasskod är den första delen av en referensbeteckning, utan siffror. Exempelvis: XAA (utrymme).",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "94",
+    "term": "Kommunikation",
+    "shortname": "Förkortning: KOM",
+    "description": "Ett ömsesidigt utbyte av tankar, idéer, åsikter mellan två eller flera parter.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "95",
+    "term": "Kommunikationskanal",
+    "shortname": "Förkortning: -",
+    "description": "Hur kommunikation sker mellan programmet och våra intressenter. För kanalöversikt, kanalstrategi, se programledningsplan Kommunikation.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "96",
+    "term": "Kommunikationsplan",
+    "shortname": "Förkortning: -",
+    "description": "Plan för rätt kommunikation till rätt intressent vid rätt tidpunkt. Programmets övergripande kommunikationsplan är lika med funktion Kommunikations funktionsplan.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "97",
+    "term": "Kommunikationsstrategi",
+    "shortname": "Förkortning: -",
+    "description": "Hur programmet möter omvärldens krav och uppfyller programmets mål. Sammanfattas i programledningsplan för kommunikation och programledningsplan för intressenthantering.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "98",
+    "term": "Komponent / Kontrollenhet",
+    "shortname": "Förkortning: -",
+    "description": "Denna nivån består av de komponenter som bygger upp och realiserar funktionen av de tekniska systemen.",
+    "source": "VA SYD"
+  },
+  {
+    "id": "99",
+    "term": "Konfidentialitet",
+    "shortname": "Förkortning: -",
+    "description": "Att information skyddas från obehörig insyn, både avsiktlig och oavsiktlig. Grundläggande begrepp informationssäkerhet.",
+    "source": "VA SYDs IT-avd. Inforamtionssäkerhet"
+  },
+  {
+    "id": "100",
+    "term": "Konsekvens",
+    "shortname": "Förkortning: -",
+    "description": "Följd av en händelse.",
+    "source": "-"
+  },
+  {
+    "id": "102",
+    "term": "Kontraktsadministratör",
+    "shortname": "Förkortning: -",
+    "description": "Administrerar och följer upp kontrakt/avtal som hör till projektet",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "103",
+    "term": "Kontrollansvarig PBL",
+    "shortname": "Förkortning: -",
+    "description": "En Kontrollansvarig enligt PBL har som uppgift att hjälpa byggherren att säkerställa att alla kontroller görs som är nödvändiga för att kraven i bygglagstiftningen följs.",
+    "source": "Rollista HAR-programmet 2021-03-29 https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/kontrollansvariga-och-deras-uppgifter/"
+  },
+  {
+    "id": "104",
+    "term": "Kontrollprogram",
+    "shortname": "Förkortning: -",
+    "description": "En plan för genomförande av avtalad egenkontroll.",
+    "source": "-"
+  },
+  {
+    "id": "105",
+    "term": "Kostnadsminskning",
+    "shortname": "Förkortning: -",
+    "description": "Avvikelse p.g.a. minskad kostnad för utförande av arbete. ",
+    "source": "-"
+  },
+  {
+    "id": "106",
+    "term": "Kostnadsstyrning",
+    "shortname": "Förkortning: EKO",
+    "description": "Ett kunskapsområde inom funktion Planering inom HAR",
+    "source": "-"
+  },
+  {
+    "id": "107",
+    "term": "Kostnadsökning",
+    "shortname": "Förkortning: -",
+    "description": "Avvikelse p.g.a. ökad kostnad för utförande av arbete.",
+    "source": "-"
+  },
+  {
+    "id": "108",
+    "term": "Krav",
+    "shortname": "Förkortning: -",
+    "description": "Ett villkor eller en förmåga som måste uppfyllas i en produkt, tjänst eller ett resultat för att tillgodose ett behov.",
+    "source": "-"
+  },
+  {
+    "id": "109",
+    "term": "Kravspecifikation",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som beskriver de specificerade krav som systemet eller delsystemet ska överensstämma med.",
+    "source": "-"
+  },
+  {
+    "id": "110",
+    "term": "Kritiska linjen-metoden",
+    "shortname": "Förkortning: CPM",
+    "description": "En metod för att beräkna kortaste varak-tigheten för ett projekt eller program och avgöra vilken flexibilitet som är möjlig vid tidsplaneringen av de logiska linjerna i nätplanen, i tidplansmodellen.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "111",
+    "term": "Kvalificeringskrav",
+    "shortname": "Förkortning: -",
+    "description": "Krav på leverantörens finansiella och ekonomiska ställning samt tekniska och yrkesmässiga förmåga och kapacitet.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "112",
+    "term": "Kvalitativ leverans",
+    "shortname": "Förkortning: -",
+    "description": "Leveranser från HAR-programmet till VA SYD med kvalitet som mist uppfyller den kravställning som VA SYD som mottagande organisation ställt på HAR-programmet. Leverans är del av HAR-programmets nyttorealisering.",
+    "source": "-"
+  },
+  {
+    "id": "113",
+    "term": "Kvalitet",
+    "shortname": "Förkortning: -",
+    "description": "Alla sammantagna egenskaper hos ett objekt eller en företeelse som ger dess förmåga att tillfredsställa uttalade och underförstådda behov.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "114",
+    "term": "Kvalitetsansvarig",
+    "shortname": "Förkortning: -",
+    "description": "Är ansvarig för att projektet arbetar med kvalitet",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "115",
+    "term": "Kvalitetsmanual",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som anger kvalitetspolicyn och som beskriver en organisations kvalitetssystem.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "116",
+    "term": "Kvalitetsplan",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som anger de specifika kvalitetspåverkande aktiviteterna, deras ordningsföljd och de resurser som används för dessa aktiviteter för viss produkt, projekt eller kontrakt. Handling som anger de särskilda kvalitetspåverkande åtgärderna, deras ordningsföljd och de resurser som skall användas.",
+    "source": "AB 04, SS-ISO 8402"
+  },
+  {
+    "id": "117",
+    "term": "Kvalitetsplanering",
+    "shortname": "Förkortning: -",
+    "description": "Aktiviteter so fastställer kvalitetsmålen och kvalitetskraven samt målen och kraven för tillämpningen av kvalitetssystemelementen.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "118",
+    "term": "Kvalitetspolicy",
+    "shortname": "Förkortning: -",
+    "description": "Organisations övergripande avsikter och inriktning vad avser kvalitet, formellt uttalande av den högsta ledningen.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "119",
+    "term": "Kvalitetsrevision",
+    "shortname": "Förkortning: -",
+    "description": "Systematisk och oberoende undersökning för att avgöra om kvalitetspåverkande aktiviteter och tillhörande resultat överensstämmer med vad som planerats och om aktiviteterna genomförts på ett effektivt sätt och är lämpliga för att nå målen.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "120",
+    "term": "Kvalitetsrevisor",
+    "shortname": "Förkortning: -",
+    "description": "Person som är kvalificerad att utföra kvalitetsrevisioner.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "121",
+    "term": "Kvalitetssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Kvalitetsstyrning inom funktion Information",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "122",
+    "term": "Kvalitetsstyrning",
+    "shortname": "Förkortning: -",
+    "description": "Operativa metoder och aktiviteter som tillämpas för rätt uppfylla kvalitetskrav.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "123",
+    "term": "Kvalitetssystem",
+    "shortname": "Förkortning: -",
+    "description": "Organisatorisk struktur rutiner, processer och resurser som är nödvändiga för ledning och styrning av verksamheten med avseende på kvalitet (kvalitetsledning).   ",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "124",
+    "term": "Kvalitetssäkring",
+    "shortname": "Förkortning: -",
+    "description": "Alla inom ramen för ett kvalitetssystem planerade och systematiska aktiviteter, presenterade i nödvändig utsträckning, som skapar tillräcklig tilltro till att ett objekt kommer att uppfylla kvalitetskrav.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "125",
+    "term": "Kvarstående risk",
+    "shortname": "Förkortning: -",
+    "description": "Risken och dess värde efter det att riskreducerande åtgärder vidtagits.",
+    "source": "-"
+  },
+  {
+    "id": "126",
+    "term": "Kärnprocessen",
+    "shortname": "Förkortning: -",
+    "description": "En av programmets fyra huvudprocesser. Den process där förädlingen av programmets leverabler och nyttor sker. Den omfattar alla tekniska aktiviteter från förstudie, systemhandling, detaljprojektering och byggande till driftsatta och överlämnade anläggningsdelar. ",
+    "source": "Programplanen"
+  },
+  {
+    "id": "127",
+    "term": "Lathund",
+    "shortname": "Förkortning: -",
+    "description": "En lathund är en hjälpreda eller en lättöverskådlig manual som är till för att underlätta ett arbete. Syftet med lathunden är att minimera informationsmängden för att utföra en uppgift i ett specifikt sammanhang.",
+    "source": "https://sv.wikipedia.org/wiki/Lathund"
+  },
+  {
+    "id": "128",
+    "term": "Ledningens genomgång",
+    "shortname": "Förkortning: -",
+    "description": "Av högsta ledningen utförd formell utvärdering av kvalitetssystemets tillstånd och lämplighet i förhållande till kvalitetspolicy och kvalitetsmål.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "129",
+    "term": "Ledningsavtal",
+    "shortname": "Förkortning: -",
+    "description": "Avtal som upprättas av Funktion Fastighet efter input från Funktion Teknik inför omläggning av ledningar.",
+    "source": "-"
+  },
+  {
+    "id": "130",
+    "term": "Ledningsomläggning",
+    "shortname": "Förkortning: -",
+    "description": "Beskriver det som funktion teknik hanterar och som utgör underlag för Ledningsavtal och dessutom visar  gränssnitten mot tunnelentreprenaderna. \"Ledningsomläggningar och anslutningar\" ",
+    "source": "-"
+  },
+  {
+    "id": "131",
+    "term": "Ledningsprocessen",
+    "shortname": "Förkortning: -",
+    "description": "En av programmets fyra huvudprocesser. Omfattar alla aktiviteter som krävs för att initiera, planera, styra och avsluta (IPUSA) de övriga programprocesserna. ",
+    "source": "Programplanen"
+  },
+  {
+    "id": "132",
+    "term": "Leverantör",
+    "shortname": "Förkortning: -",
+    "description": "Leverantör av arbete, varor eller tjänster",
+    "source": "SS-EN ISO 19650-1:2019"
+  },
+  {
+    "id": "133",
+    "term": "Leverantörskvalificering",
+    "shortname": "Förkortning: -",
+    "description": "Den del av anbudsprövningen där den upphandlande myndigheten/enheten kontrollerar att de leverantörer som lämnat anbud uppfyller de s.k. kvalificeringskrav som ställs i upphandlingen. Syftet är att bedöma om leverantören har tillräcklig förmåga att leverera den vara, utföra den tjänst eller genomföra de byggnadsentreprenadsarbeten som upphandlingen avser (14 kap LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "134",
+    "term": "Leverera",
+    "shortname": "Förkortning: -",
+    "description": "Fysiskt överföra handlingar till centralarkiv eller arkivinstitution (se även överlämna).",
+    "source": "Arkivteknik ordlista"
+  },
+  {
+    "id": "135",
+    "term": "Likviditetsplan",
+    "shortname": "Förkortning: -",
+    "description": "Periodiserad budget.",
+    "source": "-"
+  },
+  {
+    "id": "136",
+    "term": "Linjeorganisation",
+    "shortname": "Förkortning: -",
+    "description": "Linjeorganisationen är en typ av organisation som fördelar ansvar och rapportering till separata funktionella enheter, såsom tillverkning, marknadsföring och produktutveckling. Ofta har ledningen också en stab av specialister och funktioner för övergripande administration, såsom ekonomi och personal.",
+    "source": "https://sv.wikipedia.org/wiki/Linjeorganisation"
+  },
+  {
+    "id": "137",
+    "term": "Mallar",
+    "shortname": "Förkortning: MALL",
+    "description": "Dokumentmall",
+    "source": "-"
+  },
+  {
+    "id": "138",
+    "term": "Malmö-Lund-regionen",
+    "shortname": "Förkortning: -",
+    "description": "Vi säger ibland MalmöLundregionen och ibland LundMalmöregionen – för att vi behöver bli konsekventa så har vi beslutat att det är: Malmö-Lund-regionen som gäller i extern och intern kommunikation.",
+    "source": "-"
+  },
+  {
+    "id": "139",
+    "term": "Marknadsundersökning",
+    "shortname": "Förkortning: -",
+    "description": "Förberedelse inför en upphandling i syfte att undersöka vad marknaden kan erbjuda för att tillgodose den upphandlande myndighetens behov.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "140",
+    "term": "Material",
+    "shortname": "Förkortning: -",
+    "description": "Produkter, exklusive kemiska produkter.",
+    "source": "-"
+  },
+  {
+    "id": "141",
+    "term": "Materialutnyttjande",
+    "shortname": "Förkortning: -",
+    "description": "Avfallets materialinnehåll återvinns för användning till nya produkter och varor eller på annat sätt utnyttjas, t.ex. för anläggnings- eller utfyllnadsändamål.",
+    "source": "-"
+  },
+  {
+    "id": "142",
+    "term": "MAXIMA",
+    "shortname": "Förkortning: -",
+    "description": "MAXIMA omfattar avloppsreningssystemet, som ska byggas och ägas i enlighet med kommande genomförandeavtal. MAXIMA omfattar ett nytt Sjölunda avloppsreningsverk med nya utloppsledningar, en ny stor pumpstation, en avloppstunnel under Malmö och överföringsledningar och nödvändiga pumpstationer för att ansluta kommunerna Burlöv, Lomma och Svedala till Sjölunda avloppsreningsverk.",
+    "source": "-"
+  },
+  {
+    "id": "143",
+    "term": "Miljösamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Miljöstyrning inom funktion Miljö",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "144",
+    "term": "Miljöspecialist",
+    "shortname": "Förkortning: -",
+    "description": "Är ansvarig för för miljöfrågor i projektet. Kan vara person på programmet",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "145",
+    "term": "Milstolpe",
+    "shortname": "Förkortning: -",
+    "description": "En betydelsefull tidpunkt eller händelse i ett projekt, program eller portfölj. Därutöver ses varje milstolpe som ett gränssnitt dvs en leverans mellan två parter och betecknas som en mellan parterna överenskommen tidpunkt då en leverabel färdigställs.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "146",
+    "term": "Minnesanteckningar",
+    "shortname": "Förkortning: -",
+    "description": "Ej formella noteringar från möte. Ska användas istället för Mötesanteckningar.",
+    "source": "-"
+  },
+  {
+    "id": "147",
+    "term": "Mitigera",
+    "shortname": "Förkortning: -",
+    "description": "Mildra skärpan l. intensiteten av (ngt), göra (ngt) lindrigare, lindra. Exempel: Risker som inte går att acceptera kan mitigeras genom att minska sannolikheten för att risken inträffar eller genom att reducera konsekvensen av risken.",
+    "source": "Svenska Akademiens ordbok. Exempel: Länstyrelsen Stockholm"
+  },
+  {
+    "id": "148",
+    "term": "Mjuka parametrar",
+    "shortname": "Förkortning: -",
+    "description": "Andra tilldelningskriterier än pris / anbudssumma vid bedömning av ekonomiskt mest fördelaktiga anbud.",
+    "source": "Konkurrensverkets uppdragsforskningsrapport 2014:5"
+  },
+  {
+    "id": "149",
+    "term": "Modell",
+    "shortname": "Förkortning: -",
+    "description": "Avbildning av verkligheten enligt bestämda regler och aspekter. En del av en modell kan representeras av en CAD-modell.",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "150",
+    "term": "Mottagande organisation",
+    "shortname": "Förkortning: -",
+    "description": "VA SYD är mottagare och förvaltare av programmets leveranser.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "151",
+    "term": "Mottagare",
+    "shortname": "Förkortning: -",
+    "description": "VA SYDs driftorganisation eller en tredje part som är utsedd i ett avtal med extern part.",
+    "source": "-"
+  },
+  {
+    "id": "152",
+    "term": "Mottagning",
+    "shortname": "Förkortning: -",
+    "description": "Process där mottagare tar emot projektens färdigställda leverabler för drift- och underhåll av dessa.",
+    "source": "-"
+  },
+  {
+    "id": "153",
+    "term": "Mottagningsledare",
+    "shortname": "Förkortning: -",
+    "description": "Roll i programledningen. I extern kommunikation kan beroende på målgrupp en beskrivning av rollen vara att föredra, så att rollen blir begriplig för alla.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "154",
+    "term": "Målgrupp",
+    "shortname": "Förkortning: -",
+    "description": "En definierad intressentgrupp som programmet vill nå med sina budskap.",
+    "source": "Funktion Kommunikation"
+  },
+  {
+    "id": "155",
+    "term": "Nollalternativ MB",
+    "shortname": "Förkortning: -",
+    "description": "Befolkning 2045 med nuvarande ledningssystem och tillståndsgivet avloppsreningsverk, med anmälda ändringar.",
+    "source": "-"
+  },
+  {
+    "id": "156",
+    "term": "Norra delen av Malmö hamn ",
+    "shortname": "Förkortning: -",
+    "description": "Benämningen av området i hamnen där Sjöunda ARV ligger.",
+    "source": "Advokatfirman Delphi"
+  },
+  {
+    "id": "157",
+    "term": "Norra hamnen",
+    "shortname": "Förkortning: -",
+    "description": "Norra hamnen avser en hamndel och det område där masshanteringen ska ske. Dvs längre väster ut än norra delen av Malmö hamn.",
+    "source": "Advokatfirman Delphi"
+  },
+  {
+    "id": "158",
+    "term": "Nya Sjölunda",
+    "shortname": "Förkortning: NS",
+    "description": "I en rapport eller liknande dokument är utgångspunkten att alltid skriva ut hela begreppet projekt Nya Sjölunda. Det behöver framgå i kontexten att projekt Nya Sjölunda handlar om att bygga ett nytt regionalt avloppsreningsverk. Vi bygger ett nytt Sjölunda ARV på platsen där vi redan har ett Sjölunda ARV i drift idag och därför refererar projekt Nya Sjölunda till byggnadsskedet. Avloppsreningsverket heter Sjölunda ARV och det kommer det att heta när anläggningen tas i drift igen efter att ny- och utbyggnaden är klar. När vi pratar om projektet, ombyggnad och utbyggnad under närmaste 10-årsperioden, säger vi projekt Nya Sjölunda, som är ett projektnamn. ",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "159",
+    "term": "Nytta/nyttor",
+    "shortname": "Förkortning: -",
+    "description": "Anges i HAR-programmets programplan (PP)",
+    "source": "Programplanen"
+  },
+  {
+    "id": "160",
+    "term": "Nyttorealisering",
+    "shortname": "Förkortning: -",
+    "description": "Styrning för att realisera nyttorna.  ",
+    "source": "-"
+  },
+  {
+    "id": "161",
+    "term": "Nätplan",
+    "shortname": "Förkortning: -",
+    "description": "En grafisk framställning av de logiska sambanden mellan aktiviteterna i pro-gramtidsplanen.",
+    "source": "PMBOK Guide, sjätte utgåvan, Svensk översättning"
+  },
+  {
+    "id": "162",
+    "term": "Observation",
+    "shortname": "Förkortning: -",
+    "description": "Notering av sakförhållande funnet under en kvalitetsrevision och styrkt av bevis.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "163",
+    "term": "Offentlig handling",
+    "shortname": "Förkortning: -",
+    "description": "Allmän handling som inte omfattas av sekretess enligt lag.",
+    "source": "-"
+  },
+  {
+    "id": "164",
+    "term": "Omföring",
+    "shortname": "Förkortning: -",
+    "description": "Omkontering av kostnader",
+    "source": "-"
+  },
+  {
+    "id": "165",
+    "term": "Option",
+    "shortname": "Förkortning: -",
+    "description": "En möjlighet att förlänga eller ändra omfattningen av ett kontrakt. Ska anges i upphandlingsdokumenten och i kontrakt.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "166",
+    "term": "Organisation Breakdown Structure",
+    "shortname": "Förkortning: OBS",
+    "description": "Organisation Breakdown Structure. Se Organisationsplan.",
+    "source": "PMBOK"
+  },
+  {
+    "id": "167",
+    "term": "Organisationsplan",
+    "shortname": "Förkortning: -",
+    "description": "Nedbrytning av mandat i en organisation. Illustrerar även rapporteringsvägar.",
+    "source": "-"
+  },
+  {
+    "id": "168",
+    "term": "Osäkerhet",
+    "shortname": "Förkortning: -",
+    "description": "Osäkerhet finns i och är en del av planerade händelser.",
+    "source": "-"
+  },
+  {
+    "id": "169",
+    "term": "Osäkerhetsanalys",
+    "shortname": "Förkortning: -",
+    "description": "Baserad på successivprincipen/Lichtenbergmetoden. Metod att beräkna risker och möjligheter i en budget eller tidplan.",
+    "source": "www.lichtenberg.org"
+  },
+  {
+    "id": "170",
+    "term": "OT Operational technology",
+    "shortname": "Förkortning: -",
+    "description": "Med Operational Technology (OT) avses hårdvara och programvara avsedd för att upptäcka eller orsaka förändringar i fysiska processer genom direkt övervakning och/eller kontroll av fysiska enheter som ventiler, pumpar, motorer etc.",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "171",
+    "term": "Otillåten direktupphandling",
+    "shortname": "Förkortning: -",
+    "description": "Ingående av avtal med en leverantör utan föregående annonsering, trots att avtalet rätteligen skulle ha föregåtts av ett annonserat förfarande enligt LOU eller LUF.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "172",
+    "term": "Parter",
+    "shortname": "Förkortning: -",
+    "description": "VA SYDs medlemskommuner i beslutsprocessen. I övriga sammanhang är det andra organisationer, roller etc.",
+    "source": "-"
+  },
+  {
+    "id": "173",
+    "term": "Periodiserad budget",
+    "shortname": "Förkortning: -",
+    "description": "Ursprunglig budget + Omföring + Programändring = Aktuell Budget Ursprunglig budget + Omföring + Programändring + Kostnadsökning + Kostnadsminskning = Prognos. ",
+    "source": "-"
+  },
+  {
+    "id": "174",
+    "term": "Personuppgiftsbiträdesavtal",
+    "shortname": "Förkortning: PUBA",
+    "description": "För att stödja den ansvarige kräver GDPR att om man delar data med någon annan, till exempel en underleverantör av ett digitalst system, måste det finnas ett avtal som binder underleverantören till att följa lagens krav. Syftet är att behålla kontrollen över personuppgifter genom att ett personuppgiftsbiträdesavtal upprättas mellan parterna (den som är personuppgiftsansvarig och den som är personuppgiftsbiträde). Det är den som är personuppgiftsansvarig som ska se till att ett sådant avtal upprättas.",
+    "source": "VA SYD IT"
+  },
+  {
+    "id": "175",
+    "term": "Planlagd produktion",
+    "shortname": "Förkortning: -",
+    "description": "Vid avstämningstillfället ackumulerat värde av den periodiserade budgeten.",
+    "source": "-"
+  },
+  {
+    "id": "176",
+    "term": "Policy",
+    "shortname": "Förkortning: -",
+    "description": "En policy är en avsiktsförklaring för att styra beslut i en önskad riktning. Policy är ett kortfattat dokument på en övergripande nivå om specifika, strategiskt viktiga områden. Den är vägledande för beslut och styrning och innehåller grundläggande synsätt och viljeinriktning.",
+    "source": "-"
+  },
+  {
+    "id": "177",
+    "term": "Processkvalitet",
+    "shortname": "Förkortning: -",
+    "description": "Ägs av programledningen. Se PLP Kvalitetledning",
+    "source": "-"
+  },
+  {
+    "id": "178",
+    "term": "Produkter",
+    "shortname": "Förkortning: -",
+    "description": "Förädlade råvaror. Alla typer av produkter ingår även kemiska produkter.",
+    "source": "-"
+  },
+  {
+    "id": "179",
+    "term": "Produktinformation",
+    "shortname": "Förkortning: PROB",
+    "description": "Anläggningsinformation som ska överlämnas till mottagande driftorganisation. Beskriver hur produkten som projektet har levererat är uppbyggd, ska skötas och vidmakthållas. ",
+    "source": "-"
+  },
+  {
+    "id": "180",
+    "term": "Produktkvalitet",
+    "shortname": "Förkortning: -",
+    "description": "Ägs av projekten. Hanterad i genomförandeplaner (GFP). Anger hur projekten skall säkerställa kvalitativ leverans och hantering av avvikelser från kravställning. ",
+    "source": "-"
+  },
+  {
+    "id": "181",
+    "term": "Prognos",
+    "shortname": "Förkortning: -",
+    "description": "Den vid avstämningstidpunkten mest sannolika bedömda slutkostnaden. Aktuell budget + omföring + kostnadsökning + kostnadsminskning (samt vid periodiserad budget; + tidigareläggning + senareläggning)",
+    "source": "-"
+  },
+  {
+    "id": "182",
+    "term": "Program-/projektinformation",
+    "shortname": "Förkortning: -",
+    "description": "Beskriver program-/projektprocessen dess förutsättningar, framdrift och beslut. Dokument som produceras under programmets livscykel men som inte krävs för framtida drift av systemet. Kan överlämnas till linjeorganisationen som erfarenhetsåterföring.",
+    "source": "-"
+  },
+  {
+    "id": "183",
+    "term": "Programadministratör",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer funktion Planering",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "184",
+    "term": "Programcontroller",
+    "shortname": "Förkortning: -",
+    "description": "Roll som leder kunsakpsområdet Kostnadsstyrning inom funktion Planering",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "185",
+    "term": "Programhandbok",
+    "shortname": "Förkortning: -",
+    "description": "Samling av programmets dokumenterade stödprocesser på olika nivåer. Programledningsplanerna utgör stommen. Dessa kompletteras med rutiner, mallar, checklistor mm. Programhandboken finns tillgänglig i programportalen.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "186",
+    "term": "Programkommunikatör",
+    "shortname": "Förkortning: -",
+    "description": "Tillhör funktion Kommunikation. Roll som arbetar med programmets kommunikation internt och externt.",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "187",
+    "term": "Programledare",
+    "shortname": "Förkortning: -",
+    "description": "Roll i programledningen. I extern kommunikation kan beroende på målgrupp en beskrivning av rollen vara att föredra, så att rollen blir begriplig för alla.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "188",
+    "term": "Programledning",
+    "shortname": "Förkortning: -",
+    "description": "Omfattar programägare, programledare, och mottagningsledare. ",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "189",
+    "term": "Programledningsplan",
+    "shortname": "Förkortning: PLP",
+    "description": "Plan som beskriver hur programorganisationen ska arbeta inom olika ämnesområden för att säkerställa uppfyllande av programplanen. Utgör stommen till programhandboken.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "190",
+    "term": "Programmedlem",
+    "shortname": "Förkortning: -",
+    "description": "Person, anställd eller inhyrd, med en definierad roll i programmet.",
+    "source": "-"
+  },
+  {
+    "id": "191",
+    "term": "Programmet ",
+    "shortname": "Förkortning: -",
+    "description": "Programmet omfattar organisationen och det arbete som krävs för att leverera nyttorna. Det system som ska uppfylla nyttorna är MAXIMA. Programorganisationen har sin hemvist i avdelningen Hållbar avloppsrening. Programmet är ett självständigt program inom VA SYD med särskild styrning och beslutsordning.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "192",
+    "term": "Programorganisation/programmet",
+    "shortname": "Förkortning: -",
+    "description": "Temporär organisation inom VA SYD som ansvarar för förstudie projektering, byggande, driftsättning och överlämning av avloppsreningssystemet MAXIMA",
+    "source": "-"
+  },
+  {
+    "id": "193",
+    "term": "Programplan",
+    "shortname": "Förkortning: -",
+    "description": "Ett övergripande dokument som beskriver programmets övergripande mål, strategier och baseline. Översta dokumentet i ledningssystemet och bas för att programmet genomförs inom givna ramar. ",
+    "source": "Programplanen"
+  },
+  {
+    "id": "194",
+    "term": "Programplanerare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Tidsstyrning inom funktion Planering",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "195",
+    "term": "Programportal",
+    "shortname": "Förkortning: -",
+    "description": "Digital plats där programhandboken och annan nödvändig intern programinformation finns.",
+    "source": "-"
+  },
+  {
+    "id": "196",
+    "term": "Programstyrning",
+    "shortname": "Förkortning: ProgStyr",
+    "description": "Styrning ur ett övergripande programperspektiv",
+    "source": "-"
+  },
+  {
+    "id": "197",
+    "term": "Programägare",
+    "shortname": "Förkortning: PÄ",
+    "description": "Roll i programledningen. I extern kommunikation kan beroende på målgrupp en beskrivning av rollen vara att föredra, så att rollen blir begriplig för alla.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "198",
+    "term": "Project Management Body of Knowledge",
+    "shortname": "Förkortning: PMBOK",
+    "description": "A Guide to the Project Management Body of Knowledge. En vägledning i projektledning. Utgiven av PMI.",
+    "source": "-"
+  },
+  {
+    "id": "199",
+    "term": "Project Management Institute",
+    "shortname": "Förkortning: PMI",
+    "description": "Utgivare av PMBOK",
+    "source": "-"
+  },
+  {
+    "id": "200",
+    "term": "Projekt",
+    "shortname": "Förkortning: -",
+    "description": "Begreppet projekt används när det finns behov att betona programmets organisatoriska delar: - projekt Tillstånd - projekt Tunnel- projekt Nya Sjölunda",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "202",
+    "term": "Projekt Tunnel",
+    "shortname": "Förkortning: TUN",
+    "description": "Genomförandeprojekt inom HAR. Tidiagare 2 separata genomförandeprojekt kallade ÖLM resp. MAT. Benämns projekt Tunnel",
+    "source": "-"
+  },
+  {
+    "id": "203",
+    "term": "Projektadministratör",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer projektledare och/eller delprojektledare",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "204",
+    "term": "Projekteringsförutsättningar",
+    "shortname": "Förkortning: -",
+    "description": "En projekteringsförutsättning är ett dokument som definierats som detta när den översändes till konsulten från programmet HAR´. Detta skall klart anges i det tillhörande följebrevet.",
+    "source": "-"
+  },
+  {
+    "id": "205",
+    "term": "Projektingenjör",
+    "shortname": "Förkortning: -",
+    "description": "Ingenjör med kompetens inom ett givet område t.ex. miljö, tunnelbygge, kalkyl etc.",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "206",
+    "term": "Projektledare",
+    "shortname": "Förkortning: -",
+    "description": "Används i intern och extern kommunikation för projektledning av Nya Sjölunda, Tunnel och  Tillstånd och för ev andra ingående projekt.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "207",
+    "term": "Projektledare",
+    "shortname": "Förkortning: -",
+    "description": "Har det övergripande ansvaret för ett projekt",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "208",
+    "term": "Projektplanerare",
+    "shortname": "Förkortning: -",
+    "description": "Är ansvarig för för tidplan och ekonomi",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "209",
+    "term": "Projektör",
+    "shortname": "Förkortning: -",
+    "description": "Är expertstöd, sakkunnig teknisk konsult inom ett specifikt område",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "210",
+    "term": "Protokoll",
+    "shortname": "Förkortning: PROT",
+    "description": "Formell, justerad skriftlig redogörelse för möte.",
+    "source": "-"
+  },
+  {
+    "id": "211",
+    "term": "Provning",
+    "shortname": "Förkortning: -",
+    "description": "Undersökning för att bestämma en eller flera egenskaper hos ett objekt. Provning kan ingå i kontroll men kan också utföras oberoende av kontroll d.v.s. utan att krav på objektet finns uppställda för ifrågavarande egenskaper. Provning omfattar inte begreppet kontroll.",
+    "source": "TNC 95, AF AMA12, SS 020101"
+  },
+  {
+    "id": "212",
+    "term": "Provningsprotokoll",
+    "shortname": "Förkortning: -",
+    "description": "Handling vari redovisas resultat från provning av ett objekt enligt visst förfarande men som ej innehåller utlåtande.",
+    "source": "SS 020101"
+  },
+  {
+    "id": "213",
+    "term": "Provningsrapport",
+    "shortname": "Förkortning: -",
+    "description": "Handling som innehåller provningsprotokoll och ev ett utlåtande.",
+    "source": "SS 020101"
+  },
+  {
+    "id": "214",
+    "term": "Ramavtal",
+    "shortname": "Förkortning: -",
+    "description": "Ett avtal som ingås mellan en eller flera upphandlande myndigheter och en eller flera leverantörer i syfte att fastställa villkoren för senare tilldelning av kontrakt (avrop) under en given tidsperiod (2 kap 20 § LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "215",
+    "term": "RDS",
+    "shortname": "Förkortning: -",
+    "description": "Reference Designation System, (Referensbeteckningssystem) Identifierare för ett visst objekt bildat med avseende på det system i vilket objektet ingår, baserad på en eller flera aspekter av det systemet.",
+    "source": "SS EN 81346-1:2010"
+  },
+  {
+    "id": "216",
+    "term": "RDS – \"Reference Designation System\"",
+    "shortname": "Förkortning: -",
+    "description": "Referensbeteckningssystem",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "217",
+    "term": "RD-set – \"Reference Designation Set\"",
+    "shortname": "Förkortning: -",
+    "description": "Referensbeteckningsuppsättning för ett objekt består av flera referensbeteckningar ur olika aspekter.",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "218",
+    "term": "Redovisande dokument, verifikat",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som innehåller bevis på utförda aktiviteter eller uppnådda resultat.",
+    "source": "SS-ISO 8402"
+  },
+  {
+    "id": "219",
+    "term": "Registrator",
+    "shortname": "Förkortning: Reg",
+    "description": "Tjänsteman som tar emot och registrerar handlingar.",
+    "source": "-"
+  },
+  {
+    "id": "220",
+    "term": "Resultatenhet",
+    "shortname": "Förkortning: -",
+    "description": "Fastställd organisatorisk enhet med eget ansvar för resultat och balansräkning",
+    "source": "-"
+  },
+  {
+    "id": "221",
+    "term": "Resultatnivå (RNIV)",
+    "shortname": "Förkortning: -",
+    "description": "Handling, dokument, resursmodell och systemmodell utgör sinsemellan hierarkiskt beroende resultatnivåer.",
+    "source": "-"
+  },
+  {
+    "id": "222",
+    "term": "Resurs - lokal",
+    "shortname": "Förkortning: -",
+    "description": "Resurs – lokal är fysisk arbetsplats på VA SYDs huvudkontor eller i lokal i anslutning till pågående projekt.",
+    "source": "-"
+  },
+  {
+    "id": "223",
+    "term": "Resurs - personell",
+    "shortname": "Förkortning: -",
+    "description": "Personell resurs är anställd eller inhyrd konsult på hel eller deltid i programmet ",
+    "source": "-"
+  },
+  {
+    "id": "224",
+    "term": "Resurs - utrustning",
+    "shortname": "Förkortning: -",
+    "description": "Resurs - utrustning är till exempel dator, mobiltelefon eller bil.",
+    "source": "-"
+  },
+  {
+    "id": "225",
+    "term": "Resurskonsult",
+    "shortname": "Förkortning: -",
+    "description": "En konsult som i mångt och mycket likställs med en anställd VA SYD-resurs kopplat till bl.a. onboardingprocess och tillgång till annan information som reguljära VA SYD-anställda får eller ges möjlihet att ta del av. Resurskonulten är inne i ett program/projekt över en längre tidsperiod och behöver samverka med hela VA SYDs linjeorganisation.",
+    "source": "IT-avd. VA SYD har myntat detta begrepp för sitt behov av kategorisering av olika konsultresurser."
+  },
+  {
+    "id": "226",
+    "term": "Resursmodell",
+    "shortname": "Förkortning: -",
+    "description": "En resursmodell redovisas oftast i en modellrymd och kan ingå i dokument. Utgör en resultatnivå.",
+    "source": "-"
+  },
+  {
+    "id": "227",
+    "term": "Resurssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Styrning av resurser inom funktion Resurser",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "228",
+    "term": "Revision",
+    "shortname": "Förkortning: -",
+    "description": "Granskning av hur en organisation efterlever sitt ledningssystem. Kan utföras av egna organisationen eller av extern part. ",
+    "source": "-"
+  },
+  {
+    "id": "229",
+    "term": "Riktighet",
+    "shortname": "Förkortning: -",
+    "description": "Att information inte förvanskas på ett obehörigt sätt. Grundläggande begrepp informationssäkerhet.",
+    "source": "VA SYDs IT-avd. Inforamtionssäkerhet"
+  },
+  {
+    "id": "231",
+    "term": "Riskanalys",
+    "shortname": "Förkortning: -",
+    "description": "Att ställa upp rimliga hypoteser om möjliga oönskade händelseförlopp i form av kedjor av orsak och verkan och att utföra tillhörande kalkyler, värderingar eller bedömningar. Riskanalys omfattar de logiska stegen riskidentifiering och riskvärdering.",
+    "source": "EU nr 402/2013 CSM-RA"
+  },
+  {
+    "id": "232",
+    "term": "Riskansvarig",
+    "shortname": "Förkortning: -",
+    "description": "Är ansvarig för att risker samlas in och hanteras",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "233",
+    "term": "Riskbemötande åtgärd",
+    "shortname": "Förkortning: Riskåtgärd",
+    "description": "En åtgärd som syftar till att minska ett Hot eller öka en möjlighet.",
+    "source": "-"
+  },
+  {
+    "id": "234",
+    "term": "Riskhantering",
+    "shortname": "Förkortning: -",
+    "description": "Samlat begrepp för hela processen att hantera risker. Att på ett strukturerat sätt identifiera, värdera, hantera och följa upp risker.",
+    "source": "*EU nr 402/2013 CSM-RA"
+  },
+  {
+    "id": "235",
+    "term": "Risknivå",
+    "shortname": "Förkortning: -",
+    "description": "En gradering av risk bestämd utifrån en för projektet definierad riskmatris som är baserad på kombinationer av sannoliket och konsekvens. (Nästan aldrig, Sällan, Ibland, Ofta, Nästan Alltid). (Obetydlig, Betydlig, Allvarlig, Mycket Allvarligt, Extremt Allvarligt.",
+    "source": "-"
+  },
+  {
+    "id": "236",
+    "term": "Risksamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Riskhantering inom funktion Planering",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "237",
+    "term": "Riskvärderingsmatris",
+    "shortname": "Förkortning: -",
+    "description": "Beskriver hur sannolikhet och konsekvens bedöms inom HAR-programmet.",
+    "source": "-"
+  },
+  {
+    "id": "238",
+    "term": "Riskåtgärdsägare",
+    "shortname": "Förkortning: -",
+    "description": "Roll som ansvarar en eller flera specifika riskåtgärder.",
+    "source": "-"
+  },
+  {
+    "id": "239",
+    "term": "Riskägare",
+    "shortname": "Förkortning: -",
+    "description": "Roll som ansvarar för en specifik identifierad risk som är dokumenterad i riskregister.",
+    "source": "-"
+  },
+  {
+    "id": "240",
+    "term": "Sakägare",
+    "shortname": "Förkortning: -",
+    "description": "Juridisk person eller företag som blir berörd av viss åtgärd som ära föremål för prövning av domstol eller myndighet",
+    "source": "-"
+  },
+  {
+    "id": "241",
+    "term": "Samordnad funktionsprovning/- kontroll",
+    "shortname": "Förkortning: -",
+    "description": "Se Samordnad kontroll.",
+    "source": "Svensk byggtjänst"
+  },
+  {
+    "id": "243",
+    "term": "Samprövning",
+    "shortname": "Förkortning: -",
+    "description": "Pröva samtliga projekt i ett mål i mark- och miljödomstolen med en gemensam tillståndsansökan för hela programmet, där en dom ges för hela prövningen. ",
+    "source": "PM Delphi 2019-10-28"
+  },
+  {
+    "id": "244",
+    "term": "Sannolikhet",
+    "shortname": "Förkortning: -",
+    "description": "En term som sammanhänger med osäkerhet och uttrycker graden av möjlighet för ett visst utfall, dvs utgör en värdering av något som är mer eller mindre troligt. – statistisk term som betyder relativ frekvens för ett visst utfall.",
+    "source": "-"
+  },
+  {
+    "id": "245",
+    "term": "Sidoentreprenör",
+    "shortname": "Förkortning: -",
+    "description": "Den som vid sidan om entreprenören utför entreprenad åt beställaren inom arbetsområdet.",
+    "source": "AB 04"
+  },
+  {
+    "id": "246",
+    "term": "Site Acceptance Test",
+    "shortname": "Förkortning: SAT",
+    "description": "Leveransbesiktning. Aktivitet för att visa att installationen av olika leverantörssystem stämmer överens med gällande specifikationer och installationsanvisningar. Utförs efter leverans/installation hos beställaren för att påvisa systemets funktionalitet. Kan göras i olika steg. ",
+    "source": "SS-EN62381"
+  },
+  {
+    "id": "247",
+    "term": "Site Integration Test",
+    "shortname": "Förkortning: SIT",
+    "description": "Integrationsprovning. Aktivitet för att visa att sammanslagning av olika system till ett övergripande system är färdigställd och att alla delar fungerar som angivet. Utförs av beställaren efter att SAT godkänts för de system som ingår i SIT. SIT utförs för att testa kombinationen av två eller flera oberoende system för att erhålla den funktionalitet som önskas. Utförs under provdrift. Se även Samordnad kontroll.",
+    "source": "SS-EN62381"
+  },
+  {
+    "id": "248",
+    "term": "Sjölunda pumpstation",
+    "shortname": "Förkortning: -",
+    "description": "I samrådet benämner vi att projekt Tunnel består av:- Tunnel från Malmö till Nya Sjölund - Tunnel från Lund till Nya Sjölunda - Sjölunda pumpstation",
+    "source": "-"
+  },
+  {
+    "id": "249",
+    "term": "Skada",
+    "shortname": "Förkortning: -",
+    "description": "Konsekvens av en Skadehändelse.",
+    "source": "-"
+  },
+  {
+    "id": "250",
+    "term": "Skadehändelse",
+    "shortname": "Förkortning: -",
+    "description": "En skadebringande händelse, en händelse som leder till skada, dvs att det uppstår en skada genom händelsen.",
+    "source": "-"
+  },
+  {
+    "id": "251",
+    "term": "Skadescenario",
+    "shortname": "Förkortning: -",
+    "description": "Att ställa upp rimliga hypoteser om möjliga oönskade händelseförlopp i form av kedjor av orsak och verkan.",
+    "source": "-"
+  },
+  {
+    "id": "252",
+    "term": "Skadestånd",
+    "shortname": "Förkortning: -",
+    "description": "Ersättning till leverantörer som lidit skada på grund av att den upphandlande myndighet/enhet har brutit mot upphandlingsreglerna. Ansökan vid allmän domstol inom ett år från det att avtal har slutits eller att avtalet har förklarats ogiltigt genom ett avgörande som har vunnit laga kraft.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "253",
+    "term": "Slutbesiktning",
+    "shortname": "Förkortning: -",
+    "description": "Entreprenadbesiktning/slutbesiktning är en leveranskontroll avseende det som avtalats, att entreprenaden är kontraktsenligt och fackmässigt utförd eller om det finns avvikelser från tecknat avtal",
+    "source": "https://sbr.se/goda-rad-entreprenadbesiktning/"
+  },
+  {
+    "id": "254",
+    "term": "Slutdokumentation",
+    "shortname": "Förkortning: -",
+    "description": "Slutdokumentation är den dokumentation som lämnas från konsult och entreprenör till beställare när projektet avslutas.",
+    "source": "https://bransch.trafikverket.se/for-dig-i-branschen/miljo---for-dig-i-branschen/arbetssatt-och-metoder-for-miljo-i-vag--och-jarnvagsprojekt/overlamning-av-miljorelaterad--dokumentation/allmant-om-overlamning/"
+  },
+  {
+    "id": "255",
+    "term": "Slutkostnadsbudget",
+    "shortname": "Förkortning: -",
+    "description": "Budget som sträcker sig från projektets start till slut.",
+    "source": "-"
+  },
+  {
+    "id": "256",
+    "term": "Slutkostnadsprognos",
+    "shortname": "Förkortning: -",
+    "description": "Prognos som sträcker sig från projektets start till slut. ",
+    "source": "-"
+  },
+  {
+    "id": "257",
+    "term": "Stödprocessen(-r)",
+    "shortname": "Förkortning: -",
+    "description": "En av programmets fyra huvudprocesser. Den process som bidrar med struktur, rutiner, resurser, system och expertis till kärnprocessen så den kan fungera på bästa sätt.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "258",
+    "term": "Successiv kalkyl",
+    "shortname": "Förkortning: -",
+    "description": "Begreppet ska inte användas inom programmet. Det är vilseledande. Använd Osäkerhetsanalys eller Kalkylering.",
+    "source": "-"
+  },
+  {
+    "id": "259",
+    "term": "Supportkonsult",
+    "shortname": "Förkortning: -",
+    "description": "En konsult som i begränsad omfattning skall stötta VA SYD. Denna konsult skall inte ges samma grundläggande behörigheter, information etc. som reuljära VA SYD-anställda och Resurskonsulter ges. Supportkonsulten ger oftast punktvist eller kortvarigt och specialliserat stöd.",
+    "source": "IT-avd. VA SYD har myntat detta begrepp för sitt behov av kategorisering av olika konsultresurser."
+  },
+  {
+    "id": "260",
+    "term": "Syfte",
+    "shortname": "Förkortning: -",
+    "description": "Syfte för vad informationen ska användas till.",
+    "source": "Se Bilaga 1, kap. 3.2: Informationsbeteckning"
+  },
+  {
+    "id": "262",
+    "term": "Systemkrav",
+    "shortname": "Förkortning: -",
+    "description": "Krav på funktioner, kvaliteter och nödvändiga begränsningar i tekniska lösningar för ett system.",
+    "source": "-"
+  },
+  {
+    "id": "263",
+    "term": "Systemmodell",
+    "shortname": "Förkortning: -",
+    "description": "En systemmodell är en primär datauppsättning från en branschapplikation (expertapplikation) och kan redovisas oftast i en modellrymd. Utgör en resultatnivå.",
+    "source": "-"
+  },
+  {
+    "id": "264",
+    "term": "Systemstöd",
+    "shortname": "Förkortning: -",
+    "description": "Systemstöd (t.ex. informationssystem, IT-system) definieras som system som ger IT-stöd och används för att samla in, lagra, bearbeta och distribuera information för ett domän och därigenom stödjer kommunikation och arbete inom och mellan organisationer.",
+    "source": "-"
+  },
+  {
+    "id": "265",
+    "term": "Systemägare",
+    "shortname": "Förkortning: SÄ",
+    "description": "Ansvar: • Säkerställa att det finns en aktuell förvaltningsplan och tillräckliga resurser för att realisera planen• Säkerställa att lagstiftning följs i förvaltningsobjektet- Bland annat Dataskyddsförordningen (GDPR)• Se till att systemet uppfyller verksamhetens behov• Övergripande ansvar att användarna har rätt kompetens för att använda systemet• Säkerställa att budgetera för drift och förändring av system enligt budgetdirekti  Befogenheter:• Mandat att teckna avtal (enligt delegationsordning) Roller för systemförvaltning Säkerställa att IT system fungerar och uppfyller verksamhetens behov.",
+    "source": "Doc ID: 3683, Utgåva 2, Godkännd 2020-08-28 Cecilia Persson, IT-avd. "
+  },
+  {
+    "id": "266",
+    "term": "Säkerhetsbesiktning",
+    "shortname": "Förkortning: -",
+    "description": "De kontroller som syftar till att fastställa de åtgärder som krävs för att upprätthålla de funktioner som har betydelse för driftsäkerheten.",
+    "source": "-"
+  },
+  {
+    "id": "267",
+    "term": "Säkerhetsbevisning",
+    "shortname": "Förkortning: -",
+    "description": "Dokumenterad bevisning att produkten uppfyller specificerade säkerhetskrav",
+    "source": "-"
+  },
+  {
+    "id": "268",
+    "term": "Säkerhetskoncept",
+    "shortname": "Förkortning: -",
+    "description": "Projekteringsförutsättningar för säkerheten i driftskedet.",
+    "source": "-"
+  },
+  {
+    "id": "269",
+    "term": "Säkerhetsplan",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som beskriver den sökandes planerade styrning av funktionssäkerhet, tillgänglighet, underhållsmässighet och säkerhet under utvecklingens alla faser. Se t.ex. SS-EN 50126:1999 eller IEC 61508:1998",
+    "source": "-"
+  },
+  {
+    "id": "270",
+    "term": "TED",
+    "shortname": "Förkortning: TED",
+    "description": "EU:s databas för meddelande om upphandlingar (annonser) där värdet av upphandling överskrider tröskelvärdena. Förkortningen står för Tenders Electronic Daily.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "271",
+    "term": "Teknikansvarig",
+    "shortname": "Förkortning: -",
+    "description": "Är ansvarig för för projektets tekniska lösning",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "272",
+    "term": "Tekniksamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Styrning Omfattning Utformning Krav- och ändringshantering inom funktion Teknik",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "273",
+    "term": "Teknisk granskare",
+    "shortname": "Förkortning: -",
+    "description": "Den som utsetts att granska riktighet och relevans av tekniks anläggnins- och förvaltningsinformation. ",
+    "source": "-"
+  },
+  {
+    "id": "274",
+    "term": "Teknisk lösning",
+    "shortname": "Förkortning: -",
+    "description": "Material, vara, konstruktion eller utförande som angetts på ritning, i beskrivning eller på annat sätt.",
+    "source": "AB 04"
+  },
+  {
+    "id": "275",
+    "term": "Tekniskt System",
+    "shortname": "Förkortning: -",
+    "description": "tekniskt system, tekniska och andra komponenter i inbördes samverkan.",
+    "source": "https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/tekniskt-system"
+  },
+  {
+    "id": "276",
+    "term": "Tekniskt System / Processenhet",
+    "shortname": "Förkortning: -",
+    "description": "Processenheter är tekniska system som är undersystem till ett funktionellt system.Exempel på en processenhet är en tank, basäng eller ett rörsystem som transporterar ett media.",
+    "source": "https://va-syd.kravportal.se/anvisningarochstandarder/rds/funktionsaspekt/"
+  },
+  {
+    "id": "277",
+    "term": "Tidigareläggning",
+    "shortname": "Förkortning: -",
+    "description": "Avvikelse p g a tidigareläggning av aktivitet.",
+    "source": "-"
+  },
+  {
+    "id": "278",
+    "term": "Tidplan",
+    "shortname": "Förkortning: -",
+    "description": "Handling med uppgifter om tider för exempelvis utförande av arbeten eller tillhandahållande av handlingar, hjälpmedel, material eller varor.",
+    "source": "AB 04"
+  },
+  {
+    "id": "279",
+    "term": "Tidstyrning",
+    "shortname": "Förkortning: TID",
+    "description": "Funktion inom HAR",
+    "source": "-"
+  },
+  {
+    "id": "280",
+    "term": "Tillbud",
+    "shortname": "Förkortning: -",
+    "description": "En händelse där fara men inte skada uppstått, dvs där skadans omfattning är noll.",
+    "source": "-"
+  },
+  {
+    "id": "281",
+    "term": "Tillgänglighet",
+    "shortname": "Förkortning: -",
+    "description": "Att informationstillgångar finns tillgängliga för rätt person vid rätt tillfälle.Grundläggande begrepp informationssäkerhet.",
+    "source": "VA SYDs IT-avd. Inforamtionssäkerhet"
+  },
+  {
+    "id": "282",
+    "term": "Tillstånd",
+    "shortname": "Förkortning: TIL",
+    "description": "Utgångspunkten är att alltid skriva ut hela begreppet projekt Tillstånd. Begreppet Tillstånd kan ge utrymme för misstolkningar om det handlar om ett projekt eller regelverk.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "283",
+    "term": "Tjänstekontrakt",
+    "shortname": "Förkortning: -",
+    "description": "Med tjänstekontrakt enligt LOU avses ett kontrakt som gäller tillhandahållande av andra tjänster än byggentreprenadkontrakt (2 kap. 21 § LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "284",
+    "term": "Topologiaspekt",
+    "shortname": "Förkortning: -",
+    "description": "Topologiaspekten anger avsedd eller verklig placering av objektet. Definierar var ett objekt finns, exempelvis i ett visst rum i en viss byggnad.",
+    "source": "https://va-syd.kravportal.se/anvisningarochstandarder/rds/"
+  },
+  {
+    "id": "285",
+    "term": "ToppID",
+    "shortname": "Förkortning: -",
+    "description": "ToppID hos VA SYD består av beteckningarna för de tre översta nivåerna i respektive struktur. Dessa gemensamt skapar en unik identifikation för VA SYD:s anläggningar enligt respektive aspekt och därmed en unik identitet för objekten längst ner i kedjan. ",
+    "source": "Begrepps-definitionerna är baserade på standarderna i serien ISO/IEC 81346 med vissa tillägg"
+  },
+  {
+    "id": "286",
+    "term": "Totalbudget",
+    "shortname": "Förkortning: -",
+    "description": "Ursprunglig budget + Omföring + Programändring = Aktuell Budget Ursprunglig budget + Omföring + Programändring + Kostnadsökning + Kostnadsminskning = Prognos. ",
+    "source": "-"
+  },
+  {
+    "id": "287",
+    "term": "Tredje part",
+    "shortname": "Förkortning: -",
+    "description": "Fysisk eller juridisk person som berörs av ett rättsförhållnade men som inte är part av detsamma.",
+    "source": "-"
+  },
+  {
+    "id": "288",
+    "term": "Tröskelvärden",
+    "shortname": "Förkortning: -",
+    "description": "Beloppsvärden som avgör om en upphandling ska ske enligt de direktivstyrda reglerna eller reglerna i LOU 19 kap.",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "289",
+    "term": "Tunnel",
+    "shortname": "Förkortning: TUN",
+    "description": "Genomförandeprojekt inom HAR. Tidigare 2 separata genomförandeprojekt kallade ÖLM resp. MAT. Benämns projekt Tunnel",
+    "source": "-"
+  },
+  {
+    "id": "290",
+    "term": "Tunnel/tunnel under centrala Malmö (projekt Tunnel) ",
+    "shortname": "Förkortning: -",
+    "description": "Begreppet \"tunnel under centrala Malmö\" kan användas i löpande text när man berättar specifikt om denna del av systemet, till exempel vid kommunikation med intressenter som enbart påverkas av denna del.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "291",
+    "term": "Underlagsrapport",
+    "shortname": "Förkortning: -",
+    "description": "Faktarapport som tas fram som underlag till tillståndsansökan till mark- och miljödomstolen.",
+    "source": "-"
+  },
+  {
+    "id": "292",
+    "term": "Underordnat tekniskt system / Utrustningsenhet",
+    "shortname": "Förkortning: -",
+    "description": "Nivån utrustningsenhet är ett tekniskt system och en undernivå till processenhet. Nivån används för att beteckna olika utrustningsenheter. Exempelvis en blåsmaskin eller en pumplinje. Nivån kan oftast ses som en hjälpande hand eller stödjande funktion till den överliggande processenheten.",
+    "source": "VA SYD, IEC 81346:2-2018 kompletterat med CoClass."
+  },
+  {
+    "id": "293",
+    "term": "Uppgraderad biogas",
+    "shortname": "Förkortning: -",
+    "description": "Biogas efter uppgradering i uppgraderingsanläggningen. Uppgraderingen innebär att koldioxid och andra föroreningar avskiljs för att höja gasens energiinnehåll.",
+    "source": "44617"
+  },
+  {
+    "id": "294",
+    "term": "Upphandlingssamordnare",
+    "shortname": "Förkortning: -",
+    "description": "Stödjer kunskapsområdet Styrning av upphandling inom funktion Upphandling",
+    "source": "Rollista HAR-programmet 2021-03-29"
+  },
+  {
+    "id": "295",
+    "term": "Upphandlingssekretess",
+    "shortname": "Förkortning: -",
+    "description": "Anbud och information som lämnas till en upphandlande myndighet/enhet (kommun, landsting eller statlig myndighet) vid en upphandling omfattas av absolut sekretess. Sekretess gäller enligt huvudregeln till dess alla anbud eller erbjudanden offentliggörs eller beslut om leverantör och anbud fattats eller ärendet dessförinnan har slutförts (19 kap. 3 § OSL).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "296",
+    "term": "Upphandlingsskadeavgift",
+    "shortname": "Förkortning: -",
+    "description": "Sanktionsavgift som kan dömas ut av förvaltningsrätt efter ansökan av Konkurrensverket. Upphandlande myndigheter/enheter kan under vissa förutsättningar åläggas att betala en upphandlingsskadeavgift vid brott mot avtalsspärr och förlängd avtalsspärr samt vid otillåten direktupphandling. Avgiften kan uppgå till maximalt tio miljoner och tillfaller staten (21 kap. LOU).",
+    "source": "Konkurrensverket"
+  },
+  {
+    "id": "297",
+    "term": "Utdata",
+    "shortname": "Förkortning: -",
+    "description": "Utdata (även utvärde, engelska: output) är observerbara signaler från ett system. Utdata är ofta behandlad indata (stimuli) som har genomgått en databehandlingsprocess.",
+    "source": "-"
+  },
+  {
+    "id": "298",
+    "term": "Utfall",
+    "shortname": "Förkortning: -",
+    "description": "Den vid avstämningstidpunkten mest sannolika bedömda kostnaden för utfört arbete. Fakturerat + Ej fakturerad produktion. ",
+    "source": "-"
+  },
+  {
+    "id": "299",
+    "term": "Utrymningsväg",
+    "shortname": "Förkortning: -",
+    "description": "Väg från brandcell till det fria eller till annan säker plats (se även inrymningsväg).",
+    "source": "TNC 95"
+  },
+  {
+    "id": "300",
+    "term": "U-verksamhet",
+    "shortname": "Förkortning: -",
+    "description": "Verksamhet som varken omfattas av tillstånds- eller anmälningsplikt",
+    "source": "-"
+  },
+  {
+    "id": "301",
+    "term": "Validera omfattning",
+    "shortname": "Förkortning: -",
+    "description": "Processen att formalisera godkännandet av slutförda leverabler i projekten och programmet.",
+    "source": "PMBOK"
+  },
+  {
+    "id": "302",
+    "term": "Validering",
+    "shortname": "Förkortning: -",
+    "description": "Säkerställandet att en produkt, en tjänst eller ett resultat uppfyller kundens och andra identifierade intressenters behov.",
+    "source": "PMBOK"
+  },
+  {
+    "id": "303",
+    "term": "Valideringsplan",
+    "shortname": "Förkortning: -",
+    "description": "Dokument som beskriver hur systemets överensstämmelse med kravspecifikation kommer att bevisas.",
+    "source": "-"
+  },
+  {
+    "id": "304",
+    "term": "Valideringsrapport",
+    "shortname": "Förkortning: -",
+    "description": "Skriftlig sammanställning av genomförd validering.",
+    "source": "-"
+  },
+  {
+    "id": "305",
+    "term": "Varuinformationsblad",
+    "shortname": "Förkortning: -",
+    "description": "Varuinformationsblad för kemikalier och även byggvarudeklarationer för pro­dukter (produktblad).",
+    "source": "-"
+  },
+  {
+    "id": "306",
+    "term": "Verifiering",
+    "shortname": "Förkortning: -",
+    "description": "Utvärdering av om en produkt, en tjänst eller ett resultat uppfyller föreskrifter, krav, specifikationer eller tvingande villkor.",
+    "source": "PMBOK"
+  },
+  {
+    "id": "307",
+    "term": "Verksamhetssystem ",
+    "shortname": "Förkortning: VerkSys",
+    "description": "Ett verksamhetssystem ledingssytem beskriver hur en organisation styr sin verksamhet. Det fungerar som ett verktyg för högsta ledningen att säkerställa att verksamheten bedrivs enligt fastställda rutiner och som ett stöd för medarbetarna i deras dagliga arbete. Programmets ledningssystem består av programplan, programledningsplaner inkl rutiner och genomförandeplaner.",
+    "source": "SIS"
+  },
+  {
+    "id": "308",
+    "term": "Verksamhetsutövare",
+    "shortname": "Förkortning: -",
+    "description": "Begreppet verksamhetsutövare är inte definierat i lagstiftningen, utan en bedömning får göras utifrån omständigheterna i det enskilda fallet. Oftast är det fråga om juridiska personer som exempelvis ett företag eller en ekonomisk förening, men det kan också vara privatpersoner som ansvarar för en verksamhet eller del av sådan",
+    "source": "https://www.folkhalsomyndigheten.se/livsvillkor-levnadsvanor/miljohalsa-och-halsoskydd/tillsyn-inom-halsoskydd/tillampa-miljobalken/tillsyn/"
+  },
+  {
+    "id": "309",
+    "term": "Version",
+    "shortname": "Förkortning: -",
+    "description": "Anger en utformning av ett specifikt dokument vid ett visst tillfälle.",
+    "source": "-"
+  },
+  {
+    "id": "310",
+    "term": "Yttre förutsättningar",
+    "shortname": "Förkortning: -",
+    "description": "Den miljö som programmet verkar i och som anger yttre begränsningar som endast i liten utsträckning kan påverkas.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "311",
+    "term": "Årskostnadsbudget",
+    "shortname": "Förkortning: -",
+    "description": "Slutkostnadsbudgeten fördelad per år.",
+    "source": "-"
+  },
+  {
+    "id": "312",
+    "term": "Årskostnadsprognos",
+    "shortname": "Förkortning: -",
+    "description": "Slutkostnadsprognosen fördelad per år.",
+    "source": "-"
+  },
+  {
+    "id": "313",
+    "term": "Återanvända",
+    "shortname": "Förkortning: -",
+    "description": "Med att \"återanvända\" avses en åtgärd som innebär att en produkt eller komponent som inte är avfall används igen för att fylla samma funktion, som den ursprungligen var avsedd för. ",
+    "source": "https://www.avfallsverige.se/ordlista/"
+  },
+  {
+    "id": "314",
+    "term": "Återstår att producera",
+    "shortname": "Förkortning: -",
+    "description": "Den vid avstämningstillfället mest sannolika kostnaden för återstående arbete. Prognos – Utfall.",
+    "source": "-"
+  },
+  {
+    "id": "315",
+    "term": "Återvinna avfall ",
+    "shortname": "Förkortning: -",
+    "description": "Med att \"återvinna avfall\" avses en avfallshantering som beskrivs i bilaga 2 till Avfallsförordningen eller som på annat sätt innebär att avfallet kommer till nytta som ersättning för annat material eller förbereds för att komma till sådan nytta eller en avfallshantering som innebär förberedelse för återanvändning. ",
+    "source": "https://www.avfallsverige.se/ordlista/"
+  },
+  {
+    "id": "316",
+    "term": "Ämnen",
+    "shortname": "Förkortning: -",
+    "description": "Kemiska grundämnen och deras föreningar i naturlig eller framställd form.",
+    "source": "-"
+  },
+  {
+    "id": "317",
+    "term": "Ämnesområde",
+    "shortname": "Förkortning: -",
+    "description": "Stödprocesser enligt PM BOK med tillägg av programmets specifika stödprocesser.",
+    "source": "Programplanen"
+  },
+  {
+    "id": "318",
+    "term": "Ändamål",
+    "shortname": "Förkortning: -",
+    "description": " bestämt mål för (någons) handlingar på visst om­råde eller dylikt; ofta med tanke på hur målet ska värderas",
+    "source": "Programplanen https://svenska.se/so/?id=196836&ref=inr828034"
+  },
+  {
+    "id": "319",
+    "term": "Ändring",
+    "shortname": "Förkortning: -",
+    "description": "Ändring mot tidigare beslutad basplan inom ramen för programplan och genomförandeplaner.",
+    "source": "-"
+  },
+  {
+    "id": "320",
+    "term": "Överföring Lund-Malmö/ÖLM",
+    "shortname": "Förkortning: ÖLM",
+    "description": "I programmet ska vi i all kommande kommunikation/kommunikationsmaterial avveckla begreppet Överföring Lund-Malmö/ÖLM. Syftar på projekt Tunnel och delen från Lund till Nya Sjölunda. Ett begrepp som inte är inarbetat i omvärlden, men som finns kvar i mycket dokumentation och rapporter från programmet.",
+    "source": "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+  },
+  {
+    "id": "321",
+    "term": "Överlämning",
+    "shortname": "Förkortning: -",
+    "description": "Dokumenterad aktivitet då information enligt kravspecifikationer lämnas över från projektet till Beställaren.",
+    "source": "VA SYD"
+  }
+]

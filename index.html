@@ -1,64 +1,45 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charSet="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Begrepplista - Tekniska Termer och Definitioner</title>
-    <meta name="description" content="En samling av tekniska begrepp, förklaringar och källor från olika standarder och specifikationer."/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begrepplistan - VA SYD</title>
     <style>
-        /* Tailwind-inspirerad återställning */
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        /* Grundläggande stilar */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
-            height: 100vh;
-        }
-        
-        .container {
+            padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
+            background-color: #f9f9f9;
         }
         
-        /* Header-stilar */
         h1 {
+            margin-bottom: 20px;
             font-size: 2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 2rem;
+            color: #333;
         }
         
-        /* Sökfält */
+        /* Search */
         .search-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-        
-        .search-box {
-            position: relative;
-            width: 100%;
-            max-width: 36rem;
+            margin-bottom: 30px;
         }
         
         .search-input {
             width: 100%;
-            padding: 0.75rem 1rem;
-            padding-right: 2.5rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
+            padding: 12px;
             font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
         }
         
         .search-input:focus {
@@ -67,423 +48,157 @@
             box-shadow: 0 0 0 3px rgba(11, 105, 132, 0.25);
         }
         
-        .search-icon {
-            position: absolute;
-            right: 0.75rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #9ca3af;
-        }
-        
-        /* Scroll-området */
-        .scroll-container {
-            flex: 1;
-            overflow-y: auto;
-            padding-bottom: 2rem;
-        }
-        
-        /* Kort-stilar */
+        /* Concept List */
         .concept-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: 36rem;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         
         .concept-card {
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            border: 1px solid #e5e7eb;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         
         .concept-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .concept-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e5e7eb;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
         
         .concept-title {
             font-size: 1.25rem;
-            font-weight: bold;
+            margin-bottom: 8px;
             color: #0b6984;
         }
         
-        .concept-abbr {
-            font-size: 0.875rem;
-            font-weight: 600;
-            background-color: #f3f4f6;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.375rem;
+        .concept-shortname {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #666;
+            font-weight: 500;
         }
         
         .concept-description {
-            margin-bottom: 1rem;
-            line-height: 1.5;
-            color: #4b5563;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
         }
         
         .concept-source {
-            font-size: 0.875rem;
-            color: #6b7280;
+            font-size: 0.8rem;
+            color: #777;
             font-style: italic;
-            margin-top: auto;
-            padding-top: 0.5rem;
-            border-top: 1px solid #e5e7eb;
         }
         
-        .concept-source-text {
-            font-weight: 600;
-        }
-
-        /* Animering för hover-effekt */
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-
-        /* Primär färg för accentfärger */
         .text-primary {
             color: #0b6984;
         }
+        
+        .loading-message {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            font-size: 1.2rem;
+            color: #666;
+            grid-column: 1 / -1;
+        }
     </style>
 </head>
-<body class="__className_d65c78">
-    <main class="container">
-        <div class="flex flex-col items-center mb-8">
-            <h1 class="text-3xl font-bold text-center">Begrepplista</h1>
-        </div>
-        
-        <div class="search-container">
-            <div class="search-box">
-                <input 
-                    type="text" 
-                    id="search-input" 
-                    class="search-input" 
-                    placeholder="Sök begrepp..." 
-                />
-                <div class="search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-container smooth-scroll">
-            <div id="concept-list" class="concept-list">
-                <!-- Begrepp laddas dynamiskt här -->
-            </div>
-        </div>
-    </main>
-
+<body>
+    <h1>Begrepplistan - VA SYD</h1>
+    
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Sök efter begrepp..." id="search-input">
+    </div>
+    
+    <div class="concept-list" id="concept-list">
+        <div class="loading-message">Laddar begrepp...</div>
+    </div>
+    
     <script>
-        // Begrepp-data från concepts.ts
-        const concepts = [
-            {
-                title: "Active Directory ",
-                abbreviation: "AD",
-                description: "Katalogtjänst från Microsoft som på VA SYD används bland annat till att autentisera anställda och konsulter. ",
-                source: "VA SYD IT - Informationssäkerhetskrav vid nya och förändrade digitala lösningar, ver 2 2020-12-15"
-            },
-            {
-                title: "Aktivitet-Tid-Resurs",
-                abbreviation: "ATR",
-                description: "Aktivitet-Tid-Resurs. Ett dokument som upprättas av konsult och godkänns av beställare före ett specifikt arbete igångsättning inom ett kontrakt med en konsult. Beskriver planerade arbetsinsatser vad avser underlag, arbetets omfattning och avgränsningar, resultat, kvalitetsledning, miljöledning, tidsåtgång,resurser och budget. ",
-                source: "-"
-            },
-            {
-                title: "Allmänna bestämmelser VA",
-                abbreviation: "ABVA",
-                description: "ABVA reglerar VA-huvudmannens och VA-abonnentens (fastighetsägare) rättigheter och skyldigheter gentemot varandra.",
-                source: "Affärsplan 2019 2030 https://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
-            },
-            {
-                title: "Anläggningsbeteckning",
-                abbreviation: "-",
-                description: "Kod som beskriver vilken anläggning",
-                source: "-"
-            },
-            {
-                title: "Arbetsmiljöspecialist",
-                abbreviation: "-",
-                description: "Bevakar arbetsmiljö i projektet. Kan vara person från programmet",
-                source: "Rollista HAR-programmet 2021-03-29"
-            },
-            {
-                title: "Arkiv",
-                abbreviation: "-",
-                description: "Samling av handlingar",
-                source: "-"
-            },
-            {
-                title: "Avloppsslam från fartyg/hamnar",
-                abbreviation: "-",
-                description: "Avloppsvatten från fartyg/hamnar benämns som avloppsslam (eftersom vattnet ej ska ingå i IED-beräkning)",
-                source: "45385"
-            },
-            {
-                title: "Avloppstunnel norr",
-                abbreviation: "-",
-                description: "En avloppstunnel som ansluter kommunerna Burlöv, Lomma och Lund samt orten Hjärup till avloppsreningssystemet MAXIMA. I dagsläget sträcker sig den planerade avloppstunneln mellan Källby avloppsreningsverk och Sjölunda avloppsreningsverk, en sträcka på cirka 10 kilometer. Till avloppstunneln ansluter kommunerna Burlöv och Lomma samt orten Hjärup i Staffanstorps kommun via befintliga och nya ledningssystem.",
-                source: "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
-            },
-            {
-                title: "Avloppstunnel söder",
-                abbreviation: "-",
-                description: "Avloppstunnel under Malmö från Turbinen i centrala Malmö till Sjölunda avloppsreningsverk består av en cirka 5,5 kilometer lång huvudtunnel och två anslutande mikrotunnlar, totalt cirka 2,4 kilometer långa. I programmet ska vi i all kommande kommunikation/kommunikationsmaterial avveckla begreppet Malmö avloppstunnel/MAT. Syftar på projekt Tunnel och delen från Malmö till Nya Sjölunda. Ett begrepp som lever kvar och används av omvärlden, media framför allt.",
-                source: "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
-            },
-            {
-                title: "Basplan",
-                abbreviation: "-",
-                description: "Beslutad omfattning, tid och budget. Från engelskans baseline.",
-                source: "-"
-            },
-            {
-                title: "Basplan för kostnader",
-                abbreviation: "-",
-                description: "Den godkända versionen av den periodiserande programbudgeten, exklusive alla reserver för oförutsedda händelser, som endast kan ändras genom formella rutiner för ändringsstyrning. Planen används som utgångspunkt för jämförelser mot faktiska resultat.",
-                source: "PMBOK Guide, sjätte utgåvan, Svensk översättning"
-            },
-            {
-                title: "Basplan för omfattning",
-                abbreviation: "-",
-                description: "Den godkända versionen av tidplanen, som endast kan ändras genom formella rutiner för ändringsstyrning och ändras som grund för jämförelser.",
-                source: "PMBOK Guide, sjätte utgåvan, Svensk översättning"
-            },
-            {
-                title: "Basplan för tider",
-                abbreviation: "-",
-                description: "Den godkända versionen av programspecifikationen, programmets WBS och tillhörande beskrivning. Basplanen kan endast ändras genom formella rutiner för ändringsstyrning och användas som grund för jämförelser.",
-                source: "PMBOK Guide, sjätte utgåvan, Svensk översättning"
-            },
-            {
-                title: "BAS-P-samordnare",
-                abbreviation: "-",
-                description: "Byggarbetsmiljösamordnaren för planering och projektering (Bas-P) ska samordna de olika projektörerna, det vill säga arkitekter, konstruktörer och andra som medverkar vid planeringen och projekteringen.",
-                source: "Rollista HAR-programmet 2021-03-29 Arbetsmiljöverket"
-            },
-            {
-                title: "BAS-U-samordnare",
-                abbreviation: "-",
-                description: "Byggarbetsmiljösamordnaren för utförandet av arbetet (Bas-U) ska delta i planeringen och samordna olika entreprenörers arbeten i byggskedet så att en entreprenör inte skapar risker för de andra. ",
-                source: "Rollista HAR-programmet 2021-03-29 Arbetsmiljöverket"
-            },
-            {
-                title: "Behandla avfall",
-                abbreviation: "-",
-                description: "Med att \"behandla avfall\" avses att återvinna eller bortskaffa avfall. ",
-                source: "15 kap. 6 § miljöbalken."
-            },
-            {
-                title: "Beslut",
-                abbreviation: "BESL",
-                description: "VA SYDs term för slutkostnadsbudget i ett projekt",
-                source: "-"
-            },
-            {
-                title: "Best Available Technology",
-                abbreviation: "BAT",
-                description: "BAT-principen (Best Available Technique) innebär att alla nyinvesteringar som görs med denna teknik, görs med bästa möjliga teknik, ur miljösynpunkt.",
-                source: "https://sv.wikipedia.org/wiki/BAT-principen"
-            },
-            {
-                title: "Betalningscertifikat",
-                abbreviation: "-",
-                description: "Engelskbenämning: Interim Payment Certificate",
-                source: "-"
-            },
-            {
-                title: "Biogas ",
-                abbreviation: "-",
-                description: "Den gas som produceras vid rötning av slam",
-                source: "44617"
-            },
-            {
-                title: "Bitr. Informationssamordnare",
-                abbreviation: "-",
-                description: "Stödjer kunskapsområdet Informationshantering inom funktion Information",
-                source: "Rollista HAR-programmet 2021-03-29"
-            },
-            {
-                title: "Brandsamordnare",
-                abbreviation: "-",
-                description: "Medverkar för att koordinera arbete kopplat till brand inom verksamheter och organisationer",
-                source: "Rollista HAR-programmet 2021-03-29"
-            },
-            {
-                title: "bräckt vatten",
-                abbreviation: "-",
-                description: "brackvatten havsvatten med en salinitet, salthalt (jämför hav, Havens kemi: Bestämning av salthalten), som ligger mellan oceanens ca 35 ‰ och sötvattens ca 0,3 ‰; i praktiken sätter man ofta intervallet till 0,5–30 ‰.",
-                source: "-"
-            },
-            {
-                title: "Bräddavlopp",
-                abbreviation: "-",
-                description: "Bräddavlopp definieras här som anordning, vilken möjliggör en avlastning av t.ex. magasin, bassänger eller ledningar. Det bräddade avloppsvattnet avleds till recipient alternativt dagvattenledning, då tillrinningen är större än avloppsanläggningens kapacitet. Avlopp vid t.ex. pumpstation, som automatiskt kan träda i funktion vid hydraulisk överbelastning och medför bräddning av avloppsvatten, definieras här som bräddavlopp.",
-                source: "ALLMÄNNA RÅD 93:6 \nBräddning från avloppsledningar \nKontroll av bräddning och bräddningsmängder"
-            },
-            {
-                title: "Bräddning",
-                abbreviation: "-",
-                description: "När avloppsvatten (till stora delar bestående av dagvatten) släpps ut orenat till recipienten vid sådana förhållanden då avloppsledningsnätets eller avloppsreningsverkets kapacitet överskrids, till exempel vid extrema skyfall.",
-                source: "Affärsplan 2019 2030\nhttps://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
-            },
-            {
-                title: "Budget",
-                abbreviation: "-",
-                description: "Fastställd kostnadsram. Aktuell budget = ursprunglig budget + omföring  + kostnadsökning + kostnadsminskning (samt vid periodiserad budget; + tidigareläggning + senareläggning) ",
-                source: "-"
-            },
-            {
-                title: "Budskap",
-                abbreviation: "-",
-                description: "Vad programmet vill säga till sina intressenter. Se även begrepp Huvudbudskap!",
-                source: "Funktion Kommunikation"
-            },
-            {
-                title: "Bästa tillgängliga teknik",
-                abbreviation: "BTT",
-                description: "BAT-principen (Bästa Tillgängliga Teknik) innebär att alla nyinvesteringar som görs med denna teknik, görs med bästa möjliga teknik, ur miljösynpunkt.",
-                source: "https://sv.wikipedia.org/wiki/BAT-principen"
-            },
-            {
-                title: "Change Advisory Board",
-                abbreviation: "CAB",
-                description: "Engelskbenämning för \"IT styrgrupp\"",
-                source: "-"
-            },
-            {
-                title: "Change Control Board",
-                abbreviation: "CCB",
-                description: "Forum för granskning och förslag till beslut av ändringsbegäran.",
-                source: "Rutin ändringshantering"
-            },
-            {
-                title: "Checklista",
-                abbreviation: "-",
-                description: "En checklista är ett verktyg som ofta används för att minimera fel och misstag genom att kompensera för människans begränsade minne och uppmärksamhet. Det medger konsekvens och fulländning när vissa arbeten ska utföras. Ett enkelt exempel är \"att göra\"-listan.",
-                source: "https://sv.wikipedia.org/wiki/Checklista"
-            },
-            {
-                title: "Civilt försvar",
-                abbreviation: "-",
-                description: "En del av VA SYDs anläggningsdelar och områden är klassade som skyddsobjekt, t ex vattenverk och vattentorn. Det innebär att Länsstyrelsen beviljat objekten ett förstärkt skydd mot bland annat sabotage, terroristbrott och spioneri.",
-                source: "Affärsplan 2019 2030\nhttps://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
-            },
-            {
-                title: "Cost Breakdown Structure",
-                abbreviation: "CBS",
-                description: "Cost Breakdown Structure. Logisk nedbrytning av budget med koppling till WBS.",
-                source: "PMBOK"
-            },
-            {
-                title: "C-verksamheter",
-                abbreviation: "-",
-                description: "Anmälningspliktiga verksamheter benämns C-verksamheter och dessa ska anmälas till Tillsynsmyndigheten kommunen.",
-                source: "Se 1 kap. 10 § miljöprövningsförordningen"
-            },
-            {
-                title: "Dagvatten",
-                abbreviation: "-",
-                description: "Dagvatten är regn-, spol- och smältvatten som rinner på hårdgjorda ytor eller på genomsläpplig mark. Det tillförs avloppsledningsnätet och avleds genom dagvattenledningar och diken till recipienten.",
-                source: "Affärsplan 2019 2030\nhttps://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
-            },
-            {
-                title: "Återanvända",
-                abbreviation: "-",
-                description: "Med att \"återanvända\" avses en åtgärd som innebär att en produkt eller komponent som inte är avfall används igen för att fylla samma funktion, som den ursprungligen var avsedd för. ",
-                source: "https://www.avfallsverige.se/ordlista/"
-            },
-            {
-                title: "Återstår att producera",
-                abbreviation: "-",
-                description: "Den vid avstämningstillfället mest sannolika kostnaden för återstående arbete. Prognos – Utfall.",
-                source: "-"
-            },
-            {
-                title: "Återvinna avfall ",
-                abbreviation: "-",
-                description: "Med att \"återvinna avfall\" avses en avfallshantering som beskrivs i bilaga 2 till Avfallsförordningen eller som på annat sätt innebär att avfallet kommer till nytta som ersättning för annat material eller förbereds för att komma till sådan nytta eller en avfallshantering som innebär förberedelse för återanvändning. ",
-                source: "https://www.avfallsverige.se/ordlista/"
-            },
-            {
-                title: "Ämnen",
-                abbreviation: "-",
-                description: "Kemiska grundämnen och deras föreningar i naturlig eller framställd form.",
-                source: "-"
-            },
-            {
-                title: "Ämnesområde",
-                abbreviation: "-",
-                description: "Stödprocesser enligt PM BOK med tillägg av programmets specifika stödprocesser.",
-                source: "Programplanen"
-            },
-            {
-                title: "Ändamål",
-                abbreviation: "-",
-                description: " bestämt mål för (någons) handlingar på visst om­råde eller dylikt; ofta med tanke på hur målet ska värderas",
-                source: "Programplanen https://svenska.se/so/?id=196836&ref=inr828034"
+        // Läser in begrepp från JSON-filen
+        async function loadConcepts() {
+            try {
+                const response = await fetch('concepts.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const concepts = await response.json();
+                return concepts;
+            } catch (error) {
+                console.error('Kunde inte ladda begreppen:', error);
+                document.getElementById('concept-list').innerHTML = `
+                    <div class="no-results">
+                        Kunde inte ladda begreppen. Vänligen försök igen senare.
+                    </div>
+                `;
+                return [];
             }
-        ];
-
-        // Funktion för att visa begrepp baserat på söktermen
-        function displayConcepts(searchTerm = '') {
+        }
+        
+        // Visa alla begrepp
+        async function displayConcepts(searchTerm = '') {
+            const concepts = await loadConcepts();
             const conceptList = document.getElementById('concept-list');
-            conceptList.innerHTML = '';
             
-            const filteredConcepts = searchTerm 
-                ? concepts.filter(concept => 
-                    concept.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                    (concept.abbreviation && concept.abbreviation.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                    concept.description.toLowerCase().includes(searchTerm.toLowerCase()))
-                : concepts;
+            // Filtrerar begrepp baserat på sökterm
+            const filteredConcepts = concepts.filter(concept => {
+                const term = concept.term.toLowerCase();
+                const shortname = concept.shortname.toLowerCase();
+                const description = concept.description.toLowerCase();
+                const search = searchTerm.toLowerCase();
+                
+                return term.includes(search) || 
+                       shortname.includes(search) || 
+                       description.includes(search);
+            });
             
+            // Visa resultat eller meddelande om inga resultat hittades
             if (filteredConcepts.length === 0) {
-                conceptList.innerHTML = '<div class="text-center py-8 text-gray-500">Inga begrepp hittades</div>';
+                conceptList.innerHTML = `
+                    <div class="no-results">
+                        Inga begrepp hittades för söktermen "${searchTerm}".
+                    </div>
+                `;
                 return;
             }
             
-            filteredConcepts.forEach(concept => {
-                const conceptCard = document.createElement('div');
-                conceptCard.className = 'concept-card';
-                
-                conceptCard.innerHTML = `
-                    <div class="concept-header">
-                        <h2 class="concept-title">${concept.title}</h2>
-                        <span class="concept-abbr">Förkortning: ${concept.abbreviation || '-'}</span>
-                    </div>
+            // Generera HTML för alla filtrerade begrepp
+            const conceptsHTML = filteredConcepts.map(concept => `
+                <div class="concept-card">
+                    <h2 class="concept-title">${concept.term}</h2>
+                    <div class="concept-shortname">${concept.shortname}</div>
                     <p class="concept-description">${concept.description}</p>
-                    <div class="concept-source">
-                        [KÄLLA: <span class="concept-source-text">${concept.source}</span>]
-                    </div>
-                `;
-                
-                conceptList.appendChild(conceptCard);
-            });
+                    <div class="concept-source">Källa: ${concept.source}</div>
+                </div>
+            `).join('');
+            
+            conceptList.innerHTML = conceptsHTML;
         }
         
-        // Lyssna på sökfältsinmatning
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            displayConcepts(e.target.value);
-        });
-        
-        // Visa alla begrepp när sidan laddas
-        window.addEventListener('DOMContentLoaded', () => {
+        // Initiera och lägg till event listener för sökning
+        document.addEventListener('DOMContentLoaded', () => {
+            // Visa alla begrepp direkt
             displayConcepts();
+            
+            // Lägg till event listener för sökning
+            const searchInput = document.getElementById('search-input');
+            let debounceTimer;
+            
+            searchInput.addEventListener('input', (event) => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    displayConcepts(event.target.value);
+                }, 300); // 300ms fördröjning för att minska antalet API-anrop
+            });
         });
     </script>
 </body>
