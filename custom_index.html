@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Begrepplista - Tekniska Termer och Definitioner</title>
+    <meta name="description" content="En samling av tekniska begrepp, förklaringar och källor från olika standarder och specifikationer."/>
+    <style>
+        /* Reset och grundläggande styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        /* Rubrik styling */
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+        /* Sökruta styling */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .search-box {
+            position: relative;
+            width: 100%;
+            max-width: 36rem;
+        }
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 1rem;
+            padding-right: 2.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .search-input:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25);
+        }
+        .search-icon {
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+        }
+        /* Koncept-kort styling */
+        .concepts-container {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 2rem;
+            margin: 0 auto;
+            max-width: 36rem;
+            width: 100%;
+        }
+        .concept-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .concept-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .concept-card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .concept-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .concept-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        .concept-abbr {
+            font-size: 0.875rem;
+            font-weight: 600;
+            background-color: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+        }
+        .concept-description {
+            color: #4b5563;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .concept-source {
+            font-size: 0.875rem;
+            color: #6b7280;
+            font-style: italic;
+            margin-top: auto;
+            padding-top: 0.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        .concept-source-name {
+            font-weight: 600;
+        }
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Begrepplista</h1>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Sök begrepp..." 
+                />
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="concepts-container">
+            <div id="concept-list" class="concept-list">
+                <!-- Begrepp kommer att laddas här dynamiskt -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Begrepp data
+        const concepts = [
+            {
+                title: "Active Directory",
+                abbreviation: "AD",
+                description: "Katalogtjänst från Microsoft som på VA SYD används bland annat till att autentisera anställda och konsulter.",
+                source: "VA SYD IT - Informationssäkerhetskrav vid nya och förändrade digitala lösningar, ver 2 2020-12-15"
+            },
+            {
+                title: "Aktivitet-Tid-Resurs",
+                abbreviation: "ATR",
+                description: "Aktivitet-Tid-Resurs. Ett dokument som upprättas av konsult och godkänns av beställare före ett specifikt arbete igångsättning inom ett kontrakt med en konsult. Beskriver planerade arbetsinsatser vad avser underlag, arbetets omfattning och avgränsningar, resultat, kvalitetsledning, miljöledning, tidsåtgång,resurser och budget.",
+                source: "-"
+            },
+            {
+                title: "Allmänna bestämmelser VA",
+                abbreviation: "ABVA",
+                description: "ABVA reglerar VA-huvudmannens och VA-abonnentens (fastighetsägare) rättigheter och skyldigheter gentemot varandra.",
+                source: "Affärsplan 2019 2030 https://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
+            },
+            {
+                title: "Anläggningsbeteckning",
+                abbreviation: "-",
+                description: "Kod som beskriver vilken anläggning",
+                source: "-"
+            },
+            {
+                title: "Arbetsmiljöspecialist",
+                abbreviation: "-",
+                description: "Bevakar arbetsmiljö i projektet. Kan vara person från programmet",
+                source: "Rollista HAR-programmet 2021-03-29"
+            },
+            {
+                title: "Arkiv",
+                abbreviation: "-",
+                description: "Samling av handlingar",
+                source: "-"
+            },
+            {
+                title: "Avloppsslam från fartyg/hamnar",
+                abbreviation: "-",
+                description: "Avloppsvatten från fartyg/hamnar benämns som avloppsslam (eftersom vattnet ej ska ingå i IED-beräkning)",
+                source: "45385"
+            },
+            {
+                title: "Avloppstunnel norr",
+                abbreviation: "-",
+                description: "En avloppstunnel som ansluter kommunerna Burlöv, Lomma och Lund samt orten Hjärup till avloppsreningssystemet MAXIMA. I dagsläget sträcker sig den planerade avloppstunneln mellan Källby avloppsreningsverk och Sjölunda avloppsreningsverk, en sträcka på cirka 10 kilometer. Till avloppstunneln ansluter kommunerna Burlöv och Lomma samt orten Hjärup i Staffanstorps kommun via befintliga och nya ledningssystem.",
+                source: "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+            },
+            {
+                title: "Avloppstunnel söder",
+                abbreviation: "-",
+                description: "Avloppstunnel under Malmö från Turbinen i centrala Malmö till Sjölunda avloppsreningsverk består av en cirka 5,5 kilometer lång huvudtunnel och två anslutande mikrotunnlar, totalt cirka 2,4 kilometer långa. I programmet ska vi i all kommande kommunikation/kommunikationsmaterial avveckla begreppet Malmö avloppstunnel/MAT. Syftar på projekt Tunnel och delen från Malmö till Nya Sjölunda. Ett begrepp som lever kvar och används av omvärlden, media framför allt.",
+                source: "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
+            },
+            {
+                title: "Basplan",
+                abbreviation: "-",
+                description: "Beslutad omfattning, tid och budget. Från engelskans baseline.",
+                source: "-"
+            }
+        ];
+
+        // Funktion för att visa begrepp
+        function displayConcepts(searchTerm = '') {
+            const conceptList = document.getElementById('concept-list');
+            conceptList.innerHTML = '';
+            
+            const filteredConcepts = searchTerm 
+                ? concepts.filter(concept => 
+                    concept.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                    (concept.abbreviation && concept.abbreviation.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                    concept.description.toLowerCase().includes(searchTerm.toLowerCase()))
+                : concepts;
+            
+            if (filteredConcepts.length === 0) {
+                conceptList.innerHTML = '<div class="no-results">Inga begrepp hittades</div>';
+                return;
+            }
+            
+            filteredConcepts.forEach(concept => {
+                const card = document.createElement('div');
+                card.className = 'concept-card';
+                
+                card.innerHTML = `
+                    <div class="concept-header">
+                        <h2 class="concept-title">${concept.title}</h2>
+                        <span class="concept-abbr">Förkortning: ${concept.abbreviation || '-'}</span>
+                    </div>
+                    <p class="concept-description">${concept.description}</p>
+                    <div class="concept-source">
+                        [KÄLLA: <span class="concept-source-name">${concept.source}</span>]
+                    </div>
+                `;
+                
+                conceptList.appendChild(card);
+            });
+        }
+        
+        // Lyssna på sökfältets ändringar
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            displayConcepts(e.target.value);
+        });
+        
+        // Visa alla begrepp när sidan laddas
+        window.addEventListener('DOMContentLoaded', () => {
+            displayConcepts();
+        });
+    </script>
+</body>
+</html> 
