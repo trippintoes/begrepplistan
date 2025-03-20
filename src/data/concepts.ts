@@ -2258,4 +2258,11 @@ Se även SIT.`,
     description: 'Dokumenterad aktivitet då information enligt kravspecifikationer lämnas över från projektet till Beställaren.',
     source: 'VA SYD',
   },
+  {
+  id: '322',
+  term: 'Byggnadsinformationsmodellering.',
+  shortname: "Förkortning: BIM",
+  description: 'Byggnadsinformationsmodellering är en process där byggnader modelleras med hjälp av digitala verktyg. Modelleringen sker i form av 3D-modeller, 2D-ritningar och beskrivningar av byggnader. BIM-modeller används för att planera, designa, bygga och driva byggnader.',
+  source: 'VA SYD',
+},
 ];
