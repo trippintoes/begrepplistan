@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begrepplistan - VA SYD</title>
+    <!-- Lägg till CORS-header för att tillåta inbäddning -->
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
     <style>
         /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         
         body {
@@ -31,6 +40,11 @@
         /* Search */
         .search-container {
             margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            background-color: #f9f9f9;
+            padding: 10px 0;
+            z-index: 100;
         }
         
         .search-input {
@@ -39,7 +53,6 @@
             font-size: 1rem;
             border: 1px solid #ddd;
             border-radius: 4px;
-            margin-bottom: 15px;
         }
         
         .search-input:focus {
@@ -53,6 +66,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            padding-bottom: 20px; /* Extra padding at bottom for iframe scenarios */
         }
         
         .concept-card {
@@ -109,6 +123,13 @@
             font-size: 1.2rem;
             color: #666;
         }
+        
+        /* Counter för att visa antal begrepp */
+        .concept-counter {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -116,6 +137,7 @@
     
     <div class="search-container">
         <input type="text" class="search-input" placeholder="Sök efter begrepp..." id="search-input">
+        <div class="concept-counter" id="concept-counter"></div>
     </div>
     
     <div class="concept-list" id="concept-list">
@@ -147,6 +169,7 @@
         async function displayConcepts(searchTerm = '') {
             const concepts = await loadConcepts();
             const conceptList = document.getElementById('concept-list');
+            const conceptCounter = document.getElementById('concept-counter');
             
             // Filtrerar begrepp baserat på sökterm
             const filteredConcepts = concepts.filter(concept => {
@@ -159,6 +182,13 @@
                        shortname.includes(search) || 
                        description.includes(search);
             });
+            
+            // Uppdatera räknaren
+            if (searchTerm) {
+                conceptCounter.textContent = `Visar ${filteredConcepts.length} av ${concepts.length} begrepp`;
+            } else {
+                conceptCounter.textContent = `Visar alla ${concepts.length} begrepp`;
+            }
             
             // Visa resultat eller meddelande om inga resultat hittades
             if (filteredConcepts.length === 0) {
@@ -181,6 +211,16 @@
             `).join('');
             
             conceptList.innerHTML = conceptsHTML;
+            
+            // Meddela parent-fönstret om höjd (för iframe användning)
+            if (window.parent && window.parent !== window) {
+                try {
+                    const height = document.body.scrollHeight;
+                    window.parent.postMessage({ type: 'resize', height }, '*');
+                } catch (e) {
+                    console.error('Kunde inte meddela parent-fönstret:', e);
+                }
+            }
         }
         
         // Initiera och lägg till event listener för sökning
