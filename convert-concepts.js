@@ -10,10 +10,61 @@ try {
   
   console.log(`Läste filen: ${filePath}, storlek: ${fileContent.length} tecken`);
   
-  // Fixera problem med citattecken i beskrivningarna
-  // Vi ersätter alla enkla citattecken i beskrivningarna med encodade versioner
-  fileContent = fileContent.replace(/description:\s*'([^']*(?:'[^']*)*)'(?=,\s*source:)/g, 
-                                   (match, desc) => `description: '${desc.replace(/'/g, "&apos;")}'`);
+  // Extrahera innehållet mellan de yttre hakparenteserna för concepts-arrayen
+  const match = fileContent.match(/export const concepts: Concept\[\] = \[([\s\S]*?)\];/);
+  
+  if (!match) {
+    throw new Error('Kunde inte hitta concepts-arrayen i filen');
+  }
+  
+  const conceptsArrayContent = match[1];
+  
+  // Dela upp arrayen i individuella begrepp-objekt
+  // Varje objekt börjar med { och slutar med },
+  const objectPattern = /\{\s*id:\s*['"](\d+)['"],[\s\S]*?source:\s*['"]([^'"]*)['"]\s*,?\s*\}/g;
+  
+  // Bygg upp JSON-objekt
+  let concepts = [];
+  let objectMatch;
+  
+  while ((objectMatch = objectPattern.exec(conceptsArrayContent)) !== null) {
+    // Extrahera hela objektsträngen
+    const fullMatch = objectMatch[0];
+    
+    // Extrahera ID:t
+    const idMatch = fullMatch.match(/id:\s*['"](\d+)['"]/);
+    const id = idMatch ? idMatch[1] : null;
+    
+    // Extrahera term
+    const termMatch = fullMatch.match(/term:\s*['"]([^'"]*)['"]/);
+    const term = termMatch ? termMatch[1] : '';
+    
+    // Extrahera shortname
+    const shortnameMatch = fullMatch.match(/shortname:\s*['"]([^'"]*)['"]/);
+    const shortname = shortnameMatch ? shortnameMatch[1] : '';
+    
+    // Extrahera description - detta är mer komplext eftersom beskrivningar kan innehålla citattecken
+    let descriptionMatch = fullMatch.match(/description:\s*['"]([^'"]*)['"]/);
+    // Om det inte fungerade, prova att matcha allt mellan description: och source:
+    if (!descriptionMatch) {
+      descriptionMatch = fullMatch.match(/description:\s*['"](.+?)['"]\s*,\s*source:/s);
+    }
+    const description = descriptionMatch ? descriptionMatch[1] : '';
+    
+    // Extrahera source
+    const sourceMatch = fullMatch.match(/source:\s*['"]([^'"]*)['"]/);
+    const source = sourceMatch ? sourceMatch[1] : '';
+    
+    if (id) {
+      concepts.push({
+        id,
+        term,
+        shortname,
+        description,
+        source
+      });
+    }
+  }
   
   // Skapa en hårdkodad array med saknade begrepp som vi vet att vi behöver
   const manualConcepts = [
@@ -32,6 +83,13 @@ try {
       source: "-"
     },
     {
+      id: "26",
+      term: "Besiktning",
+      shortname: "Förkortning: -",
+      description: "Granskning för att avgöra om ett objekt uppfyller ställda krav.",
+      source: "TNC 95"
+    },
+    {
       id: "32",
       term: "Bygghandling ",
       shortname: "Förkortning: -",
@@ -39,11 +97,25 @@ try {
       source: "Ur rutin Skrivregler, ver. 0.8, 2021-11-02"
     },
     {
+      id: "33",
+      term: "Byggnadsregister",
+      shortname: "Förkortning: -",
+      description: "BYGGREDA definieras av SCB som register över byggnader. Kan även avse det egna byggnadsregistret för Sjölunda och Ellinge.",
+      source: "-"
+    },
+    {
       id: "35",
       term: "Byggherre",
       shortname: "Förkortning: -",
       description: "Den som för egen räkning utför eller låter utföra projekterings-, byggnads-, rivnings- eller markarbeten.",
       source: "Ur ABT 06. Allmänna Bestämmelser för totalentreprenader avseende byggnads-, anläggnings- och installationsarbeten."
+    },
+    {
+      id: "36",
+      term: "Databärare",
+      shortname: "Förkortning: -",
+      description: "Fysiskt underlag för handlingar/uppgifter.",
+      source: "-"
     },
     {
       id: "43",
@@ -60,11 +132,25 @@ try {
       source: "-"
     },
     {
+      id: "45",
+      term: "Dagvatten",
+      shortname: "Förkortning: -",
+      description: "Dagvatten är regn-, spol- och smältvatten som rinner på hårdgjorda ytor eller på genomsläpplig mark. Det tillförs avloppsledningsnätet och avleds genom dagvattenledningar och diken till recipienten.",
+      source: "Affärsplan 2019 2030 https://intranet.vaverket.local/nyheter/Sidor/affarsplanen-ar-pa-plats.aspx"
+    },
+    {
       id: "93",
       term: "Entreprenad",
       shortname: "Förkortning: -",
       description: "Kontraktsarbete som ska utföras enligt avtal om entreprenad.",
       source: "TNC 95"
+    },
+    {
+      id: "94",
+      term: "Kommunikation",
+      shortname: "Förkortning: KOM",
+      description: "Ett ömsesidigt utbyte av tankar, idéer, åsikter mellan två eller flera parter.",
+      source: "Funktion Kommunikation"
     },
     {
       id: "101",
@@ -96,32 +182,6 @@ try {
     }
   ];
   
-  // Olika objektmönster vi ska leta efter
-  const patterns = [
-    // Mönster för standardobjekt med enkla citattecken
-    /{\s*id:\s*['"](\d+)['"]\s*,\s*term:\s*['"]([^'"]*)['"]\s*,\s*shortname:\s*['"]([^'"]*)['"]\s*,\s*description:\s*['"]([^'"]*)['"]\s*,\s*source:\s*['"]([^'"]*)['"]\s*}/g,
-    
-    // Mönster för objekt med dubbla citattecken
-    /{\s*id:\s*["'](\d+)["']\s*,\s*term:\s*["']([^"']*)["']\s*,\s*shortname:\s*["']([^"']*)["']\s*,\s*description:\s*["']([^"']*)["']\s*,\s*source:\s*["']([^"']*)["']\s*}/g
-  ];
-  
-  // Bygg upp JSON-objekt
-  let concepts = [];
-  
-  // Försök med alla mönster
-  for (const pattern of patterns) {
-    let match;
-    while ((match = pattern.exec(fileContent)) !== null) {
-      concepts.push({
-        id: match[1],
-        term: match[2],
-        shortname: match[3],
-        description: match[4],
-        source: match[5]
-      });
-    }
-  }
-  
   // Lägg till de manuellt definierade begreppen
   for (const concept of manualConcepts) {
     // Kontrollera om begreppet redan finns
@@ -136,14 +196,6 @@ try {
   
   console.log(`Extraherade totalt ${concepts.length} begrepp`);
   console.log(`Högsta ID: ${Math.max(...concepts.map(c => parseInt(c.id)))}`);
-  
-  // Fixa eventuella encodade citattecken i beskrivningarna
-  concepts = concepts.map(concept => {
-    return {
-      ...concept,
-      description: concept.description.replace(/&apos;/g, "'")
-    };
-  });
   
   // Skriv till JSON-fil
   fs.writeFileSync('concepts.json', JSON.stringify(concepts, null, 2));
@@ -160,7 +212,9 @@ try {
   }
   
   if (missingIds.length > 0) {
-    console.log('Fortfarande saknade ID:n:', missingIds);
+    console.log('Extraherade totalt', concepts.length, 'begrepp');
+    console.log('Fortfarande saknade ID:n:', missingIds.join(', '));
+    console.log('Antal saknade ID:n:', missingIds.length);
   } else {
     console.log('Alla 321 begrepp extraherades framgångsrikt!');
   }
